@@ -131,7 +131,7 @@ If you're reading this repo, you probably already know Code. The value of Cowork
 
 ---
 
-[Back to index](../README.md) | [Previous: Troubleshooting](06-troubleshooting.md)
+[Back to index](../README.md) | [Previous: Troubleshooting](06-troubleshooting.md) | [Next: Plugins tier list](08-plugins-tier-list.md)
 
 ## Sources
 
