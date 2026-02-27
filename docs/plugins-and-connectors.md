@@ -1,3 +1,10 @@
+---
+id: plugins-and-connectors
+title: "Plugins and Connectors"
+description: "Plugins, MCP, connectors, and slash commands"
+sidebar_position: 4
+---
+
 # Plugins and connectors
 
 ## MCP: Model Context Protocol
@@ -181,4 +188,3 @@ Everything is managed from the **Customize** menu that unifies plugins, skills, 
 
 ---
 
-[Back to index](../README.md) | [Previous: Best practices](03-best-practices.md) | [Next: Use cases](05-use-cases.md)

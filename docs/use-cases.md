@@ -1,3 +1,10 @@
+---
+id: use-cases
+title: "Use Cases"
+description: "Practical examples with ready-to-use prompts"
+sidebar_position: 6
+---
+
 # Use cases and examples
 
 ## File management
@@ -66,4 +73,3 @@
 
 ---
 
-[Back to index](../README.md) | [Previous: Plugins and connectors](04-plugins-and-connectors.md) | [Next: Troubleshooting](06-troubleshooting.md)

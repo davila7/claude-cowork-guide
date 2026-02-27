@@ -1,3 +1,10 @@
+---
+id: troubleshooting
+title: "Troubleshooting"
+description: "Honest limitations, workarounds, and common issues"
+sidebar_position: 8
+---
+
 # Troubleshooting and honest limitations
 
 ## Where Cowork falls short
@@ -79,7 +86,7 @@ Anthropic is explicit: agent security for Cowork is still under active developme
 
 **Prevention:**
 
-- Be more specific in your prompts (see [best practices](03-best-practices.md))
+- Be more specific in your prompts (see [best practices](best-practices.md))
 - Use AskUserQuestion: add "Do NOT start yet, ask me questions first"
 - Always review the plan before allowing execution
 - Include explicit constraints ("don't delete anything", "don't modify the original files")
@@ -114,4 +121,3 @@ If you find an issue or have a suggestion, use the feedback button available in 
 
 ---
 
-[Back to index](../README.md) | [Previous: Use cases](05-use-cases.md)

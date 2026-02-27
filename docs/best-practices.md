@@ -1,3 +1,10 @@
+---
+id: best-practices
+title: "Best Practices"
+description: "Context over prompts — philosophy and patterns"
+sidebar_position: 3
+---
+
 # Best practices
 
 ## The core philosophy
@@ -66,7 +73,7 @@ This is the one-time investment that pays in every session forever. Ideas:
 - "If you're unsure about something, ask before acting"
 - "Never use bullet points unless I specifically ask"
 
-See [full template](../templates/global-instructions.md) for more role-specific examples.
+See [full template](templates/global-instructions.md) for more role-specific examples.
 
 ## 7. Use folder instructions for projects
 
@@ -126,4 +133,3 @@ If you work on multiple computers, put your context files in a synced folder (iC
 
 ---
 
-[Back to index](../README.md) | [Previous: Features](02-features.md) | [Next: Plugins and connectors](04-plugins-and-connectors.md)

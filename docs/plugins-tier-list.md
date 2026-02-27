@@ -1,3 +1,10 @@
+---
+id: plugins-tier-list
+title: "Plugins Tier List"
+description: "Honest ranking of all 21 plugins after four weeks of daily use"
+sidebar_position: 5
+---
+
 # Plugins tier list
 
 > Some of these plugins are genuinely transformative, and some are barely useful out of the box. This is the tier list nobody else is publishing.
@@ -268,4 +275,3 @@ The mechanism is clear: Anthropic provides the model, MCP provides the connectio
 
 ---
 
-[Back to index](../README.md) | [Previous: Code vs Cowork](07-code-vs-cowork.md)

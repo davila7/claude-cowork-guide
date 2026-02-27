@@ -1,3 +1,10 @@
+---
+id: getting-started
+title: "Getting Started"
+description: "Your first 30 minutes with Claude Cowork"
+sidebar_position: 1
+---
+
 # Getting started with Claude Cowork
 
 ## Prerequisites
@@ -49,7 +56,7 @@ These files compound over time. Every week you refine them, Claude gets better a
 
 Go to **Settings > Cowork** in the desktop app. Click "Edit" next to Global Instructions. Paste the essentials from your three files: who you are, how you communicate, and how you want Claude to work with you. Save.
 
-This is the one-time investment that pays back value in every session forever. See [global instructions template](../templates/global-instructions.md) for role-specific examples.
+This is the one-time investment that pays back value in every session forever. See [global instructions template](templates/global-instructions.md) for role-specific examples.
 
 ### Minutes 15-20: Your first real task
 
@@ -67,7 +74,7 @@ Watch what happens. Answer the questions. Iterate. Have a conversation. The best
 
 Click the **"+"** button in the chat bar. Click **Plugins** and browse the library. Choose one that fits your role. After installing, type "/" to see the slash commands it adds. Try one.
 
-See [plugin guide](04-plugins-and-connectors.md) for the full list.
+See [plugin guide](plugins-and-connectors.md) for the full list.
 
 ### Minutes 25-30: Connect a tool
 
@@ -81,7 +88,7 @@ That's the moment it clicks.
 
 For recurring projects, add specific instructions when selecting a folder. Each client folder can have its own brief that Claude loads automatically. Every session with that project starts with full context, every time.
 
-See [folder instructions template](../templates/folder-instructions.md) for examples.
+See [folder instructions template](templates/folder-instructions.md) for examples.
 
 ## Your first verification prompt
 
@@ -108,4 +115,3 @@ If the instructions loaded correctly, Claude will reflect them clearly. If somet
 
 ---
 
-[Back to index](../README.md) | [Next: Features](02-features.md)

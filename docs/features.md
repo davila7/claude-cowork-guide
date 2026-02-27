@@ -1,3 +1,10 @@
+---
+id: features
+title: "Features and Capabilities"
+description: "The 5 pillars of Cowork and technical capabilities"
+sidebar_position: 2
+---
+
 # Features and capabilities
 
 ## The 5 Pillars of Cowork
@@ -72,7 +79,7 @@ Try it once. You won't go back to writing long, carefully crafted prompts from s
 
 Without a plugin, Claude Cowork is a brilliant generalist. It can write, research, analyze, organize, and build. But it doesn't know your industry's terminology, your team's workflow, or the specific outputs your role requires.
 
-Plugins change that. They are packages of skills, slash commands, and sub-agents designed for specific work functions. See the [full plugin guide](04-plugins-and-connectors.md).
+Plugins change that. They are packages of skills, slash commands, and sub-agents designed for specific work functions. See the [full plugin guide](plugins-and-connectors.md).
 
 ## Pillar 4: Instructions (Global and Per-Folder)
 
@@ -155,4 +162,3 @@ These formats have built-in visualization in the interface: Markdown (.md), HTML
 
 ---
 
-[Back to index](../README.md) | [Previous: Getting started](01-getting-started.md) | [Next: Best practices](03-best-practices.md)

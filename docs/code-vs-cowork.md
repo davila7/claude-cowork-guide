@@ -1,3 +1,10 @@
+---
+id: code-vs-cowork
+title: "Code vs Cowork"
+description: "When to use Claude Code, when to use Cowork, and when to use both"
+sidebar_position: 7
+---
+
 # Claude Code vs Claude Cowork
 
 > Both are agentic. Both run on your computer. Both can read files, execute tasks, and coordinate sub-agents. So what's actually different?
@@ -131,7 +138,6 @@ If you're reading this repo, you probably already know Code. The value of Cowork
 
 ---
 
-[Back to index](../README.md) | [Previous: Troubleshooting](06-troubleshooting.md) | [Next: Plugins tier list](08-plugins-tier-list.md)
 
 ## Sources
 
