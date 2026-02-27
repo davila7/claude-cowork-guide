@@ -1,158 +1,158 @@
-# Funcionalidades y capacidades
+# Features and capabilities
 
-## Los 5 pilares de Cowork
+## The 5 Pillars of Cowork
 
-Cowork no es una sola funcionalidad — son cinco, rankeadas aqui por cuanto impactan tu forma de trabajar.
+Cowork is not a single feature — it's five, ranked here by how much they impact the way you work.
 
-| # | Pilar | En 10 palabras |
-|---|-------|----------------|
-| 1 | File System Access | Claude lee y escribe archivos en una carpeta de tu computadora |
-| 2 | AskUserQuestion | Cowork te pregunta a TI en vez de adivinar y equivocarse |
-| 3 | Plugins | Packs de especialista que hacen a Claude experto al instante |
-| 4 | Instructions | Memoria permanente que se carga al inicio de cada sesion |
-| 5 | Connectors | Integraciones en vivo con Slack, Drive, Notion y 50+ herramientas |
+| # | Pillar | In 10 words |
+|---|--------|-------------|
+| 1 | File System Access | Claude reads and writes files in a folder on your computer |
+| 2 | AskUserQuestion | Cowork asks YOU instead of guessing and getting it wrong |
+| 3 | Plugins | Specialist packs that make Claude an instant expert |
+| 4 | Instructions | Permanent memory that loads at the start of every session |
+| 5 | Connectors | Live integrations with Slack, Drive, Notion, and 50+ tools |
 
-## Arquitectura
+## Architecture
 
-Cowork esta construido sobre las mismas bases que Claude Code, usando el Claude Agent SDK. La diferencia clave es que Cowork esta disenado para trabajo de conocimiento general, no solo para programacion.
+Cowork is built on the same foundations as Claude Code, using the Claude Agent SDK. The key difference is that Cowork is designed for general knowledge work, not just programming.
 
-Claude corre dentro de una maquina virtual (VM) ligera de Linux (Ubuntu 22) en tu computadora. Esto proporciona un entorno aislado y seguro separado de tu sistema operativo principal.
-
----
-
-## Pilar 1: File System Access
-
-Cada otra herramienta de IA funciona con uploads. Exportas un archivo, lo arrastras al chat, esperas, obtienes un output, lo descargas, lo pones de vuelta donde vino. Cowork elimina ese loop completo.
-
-Seleccionas una carpeta. Claude lee todo dentro de ella. Cuando crea algo — un documento, una hoja de calculo, un resumen — lo guarda directamente en esa carpeta.
-
-Esto suena como algo menor. No lo es. Es la diferencia entre IA como una herramienta a la que vas e IA como un colaborador que trabaja en tu entorno. Cowork puede leer tus reportes viejos para igualar tu formato, jalar datos de la hoja de calculo del mes pasado para construir la de este mes, o referenciar tus guias de marca a mitad de tarea sin que las menciones.
-
-**Operaciones soportadas:** crear archivos, editar contenido, renombrar, mover entre carpetas, organizar estructura de directorios.
-
-### La estrategia de archivos de contexto
-
-Crea una carpeta "Claude Context" con tres archivos:
-
-- **`about-me.md`** — quien eres, que haces, tu rol, que significa exito para ti
-- **`brand-voice.md`** — como te comunicas, tus frases, que suena mal, tu tono
-- **`working-style.md`** — como quieres que Claude se comporte, formatos preferidos, nivel de detalle
-
-Mientras mas contexto de calidad le des a Claude en estos archivos, menos prompting necesitas. La calidad del output pasa de "IA generica" a "esto suena como algo que yo escribiria."
-
-## Pilar 2: AskUserQuestion
-
-Esto es lo que toda otra IA hace cuando le das una tarea ambigua: adivina. Con confianza. Elige una interpretacion, la ejecuta, y te da un output pulido que responde la pregunta equivocada.
-
-Cowork hace algo diferente. Cuando necesita mas informacion, se detiene y genera preguntas estructuradas: opciones multiples, opciones especificas, un formulario que te ayuda a pensar en lo que realmente quieres.
-
-### Como activarlo
-
-Agrega esta linea al final de cualquier prompt:
-
-```
-NO empieces a trabajar todavia. Primero, hazme preguntas de clarificacion
-para que podamos definir el enfoque juntos. Solo empieza cuando estemos
-alineados.
-```
-
-O usa este como tu abridor por defecto para casi cualquier tarea:
-
-```
-Quiero [TU TAREA] para que [COMO SE VE EL EXITO].
-Primero, lee todos los archivos subidos completamente antes de responder.
-NO empieces a ejecutar todavia. Hazme preguntas de clarificacion
-(usa AskUserQuestion) para refinar el enfoque. Solo empieza a trabajar
-cuando estemos alineados.
-```
-
-Pruebalo una vez. No vas a volver a escribir prompts largos y cuidadosamente disenados desde cero.
-
-## Pilar 3: Plugins
-
-Sin un plugin, Claude Cowork es un generalista brillante. Puede escribir, investigar, analizar, organizar y construir. Pero no conoce la terminologia de tu industria, el workflow de tu equipo, ni los outputs especificos que tu rol requiere.
-
-Los plugins cambian eso. Son paquetes de skills, comandos slash y sub-agentes disenados para funciones de trabajo especificas. Ver la [guia completa de plugins](04-plugins-and-connectors.md).
-
-## Pilar 4: Instructions (Globales y por Carpeta)
-
-Cowork no tiene memoria entre sesiones. Cada vez que abres una conversacion nueva, Claude empieza completamente en blanco. Sin conocimiento de quien eres. Sin memoria de lo que discutieron ayer. Nada.
-
-Este es el feature que mas frustra a la gente — hasta que descubren Instructions.
-
-**Global Instructions:** se configuran una vez en Settings > Cowork. Se cargan automaticamente en cada sesion. Claude arranca sabiendo tu nombre, tu rol, tus preferencias de comunicacion, tus defaults de output y tu estilo de trabajo.
-
-**Folder Instructions:** contexto especifico por proyecto. Cuando seleccionas una carpeta, Claude carga las instrucciones asociadas. Perfecto para trabajo con clientes: cada carpeta puede tener su propio brief.
-
-## Pilar 5: Connectors
-
-El workflow tipico de IA involucra mucho copy-paste. Capturas tu hilo de Slack. Copias el doc. Lo pegas en el chat. Agregas contexto manualmente.
-
-Connectors eliminan todo eso. Conecta tus herramientas una vez, y Claude puede referenciar datos en vivo de ellas durante la conversacion. Sin copy-paste. Sin screenshots. Sin descargas.
-
-Pidele a Cowork que resuma las decisiones clave de #proyecto-alpha de las ultimas dos semanas y lee tu Slack. Pidele los numeros del Q1 del doc de revenue en Drive y abre tu Google Doc. Pidele que encuentre todo lo marcado como blocker en Notion y busca en tu workspace.
-
-Esto es gratuito en todos los planes. Es el feature mas subutilizado de Cowork.
+Claude runs inside a lightweight Linux virtual machine (VM) (Ubuntu 22) on your computer. This provides an isolated, secure environment separate from your main operating system.
 
 ---
 
-## Capacidades tecnicas adicionales
+## Pillar 1: File System Access
 
-### Ejecucion agentica multi-paso
+Every other AI tool works with uploads. You export a file, drag it to the chat, wait, get an output, download it, put it back where it came from. Cowork eliminates that entire loop.
 
-Claude no espera instrucciones paso a paso. Toma una tarea compleja, la descompone en sub-tareas, las ejecuta de forma autonoma y entrega resultados completos.
+You select a folder. Claude reads everything inside it. When it creates something — a document, a spreadsheet, a summary — it saves it directly to that folder.
 
-### Sub-agentes paralelos
+This sounds like a minor thing. It's not. It's the difference between AI as a tool you go to and AI as a collaborator that works in your environment. Cowork can read your old reports to match your format, pull data from last month's spreadsheet to build this month's, or reference your brand guidelines mid-task without you mentioning them.
 
-Para tareas complejas, Claude lanza multiples sub-agentes que trabajan simultaneamente en diferentes partes del problema.
+**Supported operations:** create files, edit content, rename, move between folders, organize directory structure.
 
-### Creacion de documentos profesionales
+### The context files strategy
 
-Claude tiene "skills" especializados para cada tipo de documento:
+Create a "Claude Context" folder with three files:
 
-- **Excel (.xlsx):** formulas funcionales, formato condicional, graficos, analisis de datos
-- **PowerPoint (.pptx):** diseno, diagramas, notas del presentador
-- **Word (.docx):** formato profesional, tablas de contenido, encabezados
-- **PDF:** creacion, extraccion, merge, split, formularios
-- **HTML/React:** aplicaciones web interactivas y visualizaciones
-- **Markdown:** reportes, guias y documentacion
+- **`about-me.md`** — who you are, what you do, your role, what success means to you
+- **`brand-voice.md`** — how you communicate, your phrases, what sounds wrong, your tone
+- **`working-style.md`** — how you want Claude to behave, preferred formats, level of detail
 
-### Cola de tareas
+The more quality context you give Claude in these files, the less prompting you need. Output quality goes from "generic AI" to "this sounds like something I'd write."
 
-Puedes enviar multiples tareas a la vez. Claude las procesa sin requerir interaccion secuencial.
+## Pillar 2: AskUserQuestion
 
-### Tareas programadas
+This is what every other AI does when you give it an ambiguous task: it guesses. Confidently. It picks an interpretation, executes it, and gives you a polished output that answers the wrong question.
 
-Usando `/schedule`, configuras tareas que se ejecutan automaticamente de forma recurrente. Requisito: la computadora debe estar encendida y la app abierta.
+Cowork does something different. When it needs more information, it stops and generates structured questions: multiple choice, specific options, a form that helps you think about what you actually want.
 
-### Navegacion web
+### How to activate it
 
-Claude busca informacion con WebSearch y WebFetch. Con Claude in Chrome instalado, puede interactuar directamente con paginas web.
+Add this line to the end of any prompt:
 
-### Integracion Excel + PowerPoint
+```
+Do NOT start working yet. First, ask me clarifying questions
+so we can define the approach together. Only start when we're
+aligned.
+```
 
-En research preview, Claude puede pasar contexto entre Excel y PowerPoint. Disponible para Mac en planes Max, Team o Enterprise.
+Or use this as your default opener for almost any task:
 
-### No genera imagenes
+```
+I want [YOUR TASK] so that [WHAT SUCCESS LOOKS LIKE].
+First, read all uploaded files completely before responding.
+Do NOT start executing yet. Ask me clarifying questions
+(use AskUserQuestion) to refine the approach. Only start working
+when we're aligned.
+```
 
-Para fotos, ilustraciones o arte visual, Cowork no es tu herramienta. Usa herramientas especializadas de generacion de imagenes para eso y Cowork para documentos, hojas de calculo, presentaciones e investigacion. Herramientas diferentes para trabajos diferentes.
+Try it once. You won't go back to writing long, carefully crafted prompts from scratch.
 
-## Tipos de archivos con renderizado especial
+## Pillar 3: Plugins
 
-Estos formatos tienen visualizacion integrada en la interfaz: Markdown (.md), HTML (.html), React (.jsx), Mermaid (.mermaid), SVG (.svg), PDF (.pdf).
+Without a plugin, Claude Cowork is a brilliant generalist. It can write, research, analyze, organize, and build. But it doesn't know your industry's terminology, your team's workflow, or the specific outputs your role requires.
 
-## Seguridad y permisos
+Plugins change that. They are packages of skills, slash commands, and sub-agents designed for specific work functions. See the [full plugin guide](04-plugins-and-connectors.md).
 
-**Aislamiento:** la VM esta separada del sistema operativo principal.
+## Pillar 4: Instructions (Global and Per-Folder)
 
-**Control de acceso:** tu eliges que carpetas y conectores puede ver Claude.
+Cowork has no memory between sessions. Every time you open a new conversation, Claude starts completely blank. No knowledge of who you are. No memory of what you discussed yesterday. Nothing.
 
-**Proteccion contra eliminacion:** Claude requiere permiso explicito antes de eliminar archivos.
+This is the feature that frustrates people the most — until they discover Instructions.
 
-**Permisos granulares:** para cada conector puedes configurar herramientas como Allow (automatico), Ask (confirma antes) o Block (nunca ejecuta).
+**Global Instructions:** configured once in Settings > Cowork. They load automatically in every session. Claude starts knowing your name, your role, your communication preferences, your output defaults, and your working style.
 
-**Research preview:** Anthropic es explicito sobre esto — la seguridad de agentes para Cowork sigue en desarrollo. Es solido para un preview, pero tratalo acorde. No lo corras sobre archivos que no puedas permitirte que se modifiquen sin confirmacion.
+**Folder Instructions:** project-specific context. When you select a folder, Claude loads the associated instructions. Perfect for client work: each folder can have its own brief.
+
+## Pillar 5: Connectors
+
+The typical AI workflow involves a lot of copy-paste. You capture your Slack thread. Copy the doc. Paste it in the chat. Add context manually.
+
+Connectors eliminate all of that. Connect your tools once, and Claude can reference live data from them during the conversation. No copy-paste. No screenshots. No downloads.
+
+Ask Cowork to summarize key decisions from #project-alpha over the past two weeks and it reads your Slack. Ask it for Q1 numbers from the revenue doc in Drive and it opens your Google Doc. Ask it to find everything tagged as a blocker in Notion and it searches your workspace.
+
+This is free on all plans. It's the most underused feature in Cowork.
 
 ---
 
-[Volver al indice](../README.md) | [Anterior: Primeros pasos](01-getting-started.md) | [Siguiente: Buenas practicas](03-best-practices.md)
+## Additional technical capabilities
+
+### Multi-step agentic execution
+
+Claude doesn't wait for step-by-step instructions. It takes a complex task, breaks it down into sub-tasks, executes them autonomously, and delivers complete results.
+
+### Parallel sub-agents
+
+For complex tasks, Claude launches multiple sub-agents that work simultaneously on different parts of the problem.
+
+### Professional document creation
+
+Claude has specialized "skills" for each document type:
+
+- **Excel (.xlsx):** functional formulas, conditional formatting, charts, data analysis
+- **PowerPoint (.pptx):** design, diagrams, speaker notes
+- **Word (.docx):** professional formatting, tables of contents, headers
+- **PDF:** creation, extraction, merge, split, forms
+- **HTML/React:** interactive web applications and visualizations
+- **Markdown:** reports, guides, and documentation
+
+### Task queue
+
+You can send multiple tasks at once. Claude processes them without requiring sequential interaction.
+
+### Scheduled tasks
+
+Using `/schedule`, you configure tasks that run automatically on a recurring basis. Requirement: the computer must be on and the app must be open.
+
+### Web browsing
+
+Claude searches for information with WebSearch and WebFetch. With Claude in Chrome installed, it can interact directly with web pages.
+
+### Excel + PowerPoint integration
+
+In research preview, Claude can pass context between Excel and PowerPoint. Available for Mac on Max, Team, or Enterprise plans.
+
+### No image generation
+
+For photos, illustrations, or visual art, Cowork is not your tool. Use specialized image generation tools for that and Cowork for documents, spreadsheets, presentations, and research. Different tools for different jobs.
+
+## File types with special rendering
+
+These formats have built-in visualization in the interface: Markdown (.md), HTML (.html), React (.jsx), Mermaid (.mermaid), SVG (.svg), PDF (.pdf).
+
+## Security and permissions
+
+**Isolation:** the VM is separate from the main operating system.
+
+**Access control:** you choose which folders and connectors Claude can see.
+
+**Deletion protection:** Claude requires explicit permission before deleting files.
+
+**Granular permissions:** for each connector you can configure tools as Allow (automatic), Ask (confirms before), or Block (never executes).
+
+**Research preview:** Anthropic is explicit about this — agent security for Cowork is still under development. It's solid for a preview, but treat it accordingly. Don't run it on files you can't afford to have modified without confirmation.
+
+---
+
+[Back to index](../README.md) | [Previous: Getting started](01-getting-started.md) | [Next: Best practices](03-best-practices.md)

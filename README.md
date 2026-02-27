@@ -1,110 +1,112 @@
 # Claude Cowork Brain
 
-> Tu cerebro central para entender, dominar y sacarle el maximo provecho a Claude Cowork.
+> Your central brain to understand, master, and get the most out of Claude Cowork.
 
-## Que es Claude Cowork?
+## What is Claude Cowork?
 
-Cowork es la extension agentica de Claude Desktop que lleva las capacidades de Claude Code al trabajo de conocimiento del dia a dia. En lugar de responder prompts uno a uno, Claude puede tomar tareas complejas de multiples pasos y ejecutarlas de forma autonoma: organizar archivos, crear reportes, generar presentaciones, analizar datos y mucho mas.
+Cowork is the agentic extension of Claude Desktop that brings Claude Code's capabilities to everyday knowledge work. Instead of answering prompts one by one, Claude can take complex multi-step tasks and execute them autonomously: organizing files, creating reports, generating presentations, analyzing data, and much more.
 
-> ChatGPT te entreno para escribir mejores prompts. Cowork te entrena para construir mejor contexto. Uno es una habilidad que se deprecia. El otro se acumula.
+> ChatGPT trained you to write better prompts. Cowork trains you to build better context. One is a skill that depreciates. The other compounds.
 
-**Estado actual:** Research Preview (disponible desde enero 2026)
+**Current status:** Research Preview (available since January 2026)
 
-**Disponibilidad:** Planes pagos (Pro $20/mes, Max $100-200/mes, Team, Enterprise) en macOS y Windows
+**Availability:** Paid plans (Pro $20/mo, Max $100-200/mo, Team, Enterprise) on macOS and Windows
 
-## Los 5 pilares de Cowork
+## The 5 Pillars of Cowork
 
-| # | Pilar | Que hace |
-|---|-------|----------|
-| 1 | **File System Access** | Lee y escribe archivos en una carpeta de tu computadora |
-| 2 | **AskUserQuestion** | Te pregunta a TI en vez de adivinar y equivocarse |
-| 3 | **Plugins** | Packs de especialista para tu rol exacto |
-| 4 | **Instructions** | Memoria permanente que se carga en cada sesion |
-| 5 | **Connectors** | Integraciones en vivo con Slack, Drive, Notion y 50+ herramientas |
+| # | Pillar | What it does |
+|---|--------|-------------|
+| 1 | **File System Access** | Reads and writes files in a folder on your computer |
+| 2 | **AskUserQuestion** | Asks YOU instead of guessing and getting it wrong |
+| 3 | **Plugins** | Specialist packs for your exact role |
+| 4 | **Instructions** | Permanent memory that loads in every session |
+| 5 | **Connectors** | Live integrations with Slack, Drive, Notion, and 50+ tools |
 
-## Estructura de este repositorio
+## Repository structure
 
 ```
 claude-cowork-guide/
-|-- README.md                          # Este archivo
+|-- README.md                          # This file
 |-- docs/
-|   |-- 01-getting-started.md          # Primeros 30 minutos con Cowork
-|   |-- 02-features.md                 # Los 5 pilares y capacidades
-|   |-- 03-best-practices.md           # Filosofia y buenas practicas
-|   |-- 04-plugins-and-connectors.md   # Plugins, MCP, conectores y slash commands
-|   |-- 05-use-cases.md                # Casos de uso con prompts reales
-|   |-- 06-troubleshooting.md          # Limitaciones honestas y soluciones
+|   |-- 01-getting-started.md          # Your first 30 minutes with Cowork
+|   |-- 02-features.md                 # The 5 pillars and capabilities
+|   |-- 03-best-practices.md           # Philosophy and best practices
+|   |-- 04-plugins-and-connectors.md   # Plugins, MCP, connectors, and slash commands
+|   |-- 05-use-cases.md                # Use cases with real prompts
+|   |-- 06-troubleshooting.md          # Honest limitations and solutions
+|   |-- 07-code-vs-cowork.md           # Claude Code vs Cowork: when to use which
 |-- templates/
 |   |-- context-files/
-|   |   |-- about-me.md                # Plantilla: quien eres
-|   |   |-- brand-voice.md             # Plantilla: como te comunicas
-|   |   |-- working-style.md           # Plantilla: como quieres que Claude trabaje
-|   |-- global-instructions.md         # Plantillas de instrucciones globales por rol
-|   |-- folder-instructions.md         # Plantillas de instrucciones por carpeta
-|   |-- task-prompts.md                # Prompts probados para tareas comunes
+|   |   |-- about-me.md                # Template: who you are
+|   |   |-- brand-voice.md             # Template: how you communicate
+|   |   |-- working-style.md           # Template: how you want Claude to work
+|   |-- global-instructions.md         # Global instruction templates by role
+|   |-- folder-instructions.md         # Per-folder instruction templates
+|   |-- task-prompts.md                # Tested prompts for common tasks
 |-- examples/
-|   |-- file-organization.md           # Ejemplo: organizar archivos
-|   |-- research-synthesis.md          # Ejemplo: sintesis de investigacion
-|   |-- data-analysis.md               # Ejemplo: analisis de datos
+|   |-- file-organization.md           # Example: organizing files
+|   |-- research-synthesis.md          # Example: research synthesis
+|   |-- data-analysis.md               # Example: data analysis
 ```
 
-## Inicio rapido (30 minutos)
+## Quick start (30 minutes)
 
-1. **Minutos 0-5:** Descarga la app desde [claude.com/download](https://claude.com/download) y abre Cowork
-2. **Minutos 5-10:** Crea tu carpeta "Claude Context" con [archivos de contexto](templates/context-files/)
-3. **Minutos 10-15:** Configura [instrucciones globales](templates/global-instructions.md) en Settings > Cowork
-4. **Minutos 15-20:** Corre tu primera tarea real con el patron "lee + preguntame + ejecuta"
-5. **Minutos 20-25:** Instala un [plugin](docs/04-plugins-and-connectors.md) para tu rol
-6. **Minutos 25-30:** Conecta una herramienta (Slack, Drive, Gmail) en Settings > Connectors
+1. **Minutes 0-5:** Download the app from [claude.com/download](https://claude.com/download) and open Cowork
+2. **Minutes 5-10:** Create your "Claude Context" folder with [context files](templates/context-files/)
+3. **Minutes 10-15:** Set up [global instructions](templates/global-instructions.md) in Settings > Cowork
+4. **Minutes 15-20:** Run your first real task using the "read + ask me + execute" pattern
+5. **Minutes 20-25:** Install a [plugin](docs/04-plugins-and-connectors.md) for your role
+6. **Minutes 25-30:** Connect a tool (Slack, Drive, Gmail) in Settings > Connectors
 
-> Guia detallada paso a paso: [Primeros pasos](docs/01-getting-started.md)
+> Detailed step-by-step guide: [Getting started](docs/01-getting-started.md)
 
-## Guias principales
+## Main guides
 
-| Guia | Descripcion |
-|------|-------------|
-| [Primeros pasos](docs/01-getting-started.md) | Tus primeros 30 minutos, archivos de contexto, instrucciones globales |
-| [Funcionalidades](docs/02-features.md) | Los 5 pilares de Cowork y capacidades tecnicas |
-| [Buenas practicas](docs/03-best-practices.md) | Filosofia "contexto > prompts", patrones y anti-patrones |
-| [Plugins y conectores](docs/04-plugins-and-connectors.md) | Plugins por rol, comandos slash, connectors, MCP |
-| [Casos de uso](docs/05-use-cases.md) | Ejemplos practicos con prompts listos para usar |
-| [Troubleshooting](docs/06-troubleshooting.md) | Limitaciones honestas, workarounds y problemas comunes |
+| Guide | Description |
+|-------|-------------|
+| [Getting started](docs/01-getting-started.md) | Your first 30 minutes, context files, global instructions |
+| [Features](docs/02-features.md) | The 5 pillars of Cowork and technical capabilities |
+| [Best practices](docs/03-best-practices.md) | "Context > prompts" philosophy, patterns and anti-patterns |
+| [Plugins and connectors](docs/04-plugins-and-connectors.md) | Plugins by role, slash commands, connectors, MCP |
+| [Use cases](docs/05-use-cases.md) | Practical examples with ready-to-use prompts |
+| [Troubleshooting](docs/06-troubleshooting.md) | Honest limitations, workarounds, and common issues |
+| [Code vs Cowork](docs/07-code-vs-cowork.md) | When to use Claude Code, when to use Cowork, and when to use both |
 
-## Plantillas
+## Templates
 
-| Plantilla | Uso |
-|-----------|-----|
-| [about-me.md](templates/context-files/about-me.md) | Quien eres y que haces |
-| [brand-voice.md](templates/context-files/brand-voice.md) | Tu estilo de comunicacion |
-| [working-style.md](templates/context-files/working-style.md) | Como quieres que Claude trabaje |
-| [Instrucciones globales](templates/global-instructions.md) | Preferencias por rol (PM, analista, marketing) |
-| [Instrucciones por carpeta](templates/folder-instructions.md) | Contexto por proyecto |
-| [Prompts probados](templates/task-prompts.md) | Prompts listos para copiar y usar |
+| Template | Purpose |
+|----------|---------|
+| [about-me.md](templates/context-files/about-me.md) | Who you are and what you do |
+| [brand-voice.md](templates/context-files/brand-voice.md) | Your communication style |
+| [working-style.md](templates/context-files/working-style.md) | How you want Claude to work |
+| [Global instructions](templates/global-instructions.md) | Preferences by role (PM, analyst, marketing) |
+| [Folder instructions](templates/folder-instructions.md) | Per-project context |
+| [Tested prompts](templates/task-prompts.md) | Ready-to-copy-and-use prompts |
 
-## El prompt que lo cambia todo
+## The prompt that changes everything
 
 ```
-Quiero [TU TAREA] para que [COMO SE VE EL EXITO].
-Primero, lee todos los archivos completamente antes de responder.
-NO empieces a ejecutar todavia. Hazme preguntas de clarificacion
-para refinar el enfoque. Solo empieza a trabajar cuando estemos alineados.
+I want [YOUR TASK] so that [WHAT SUCCESS LOOKS LIKE].
+First, read all files completely before responding.
+Do NOT start executing yet. Ask me clarifying questions
+to refine the approach. Only start working when we're aligned.
 ```
 
-## Conceptos clave
+## Key concepts
 
-**Agentico:** Claude no solo responde — planifica, ejecuta sub-tareas en paralelo y entrega resultados completos.
+**Agentic:** Claude doesn't just respond — it plans, executes sub-tasks in parallel, and delivers complete results.
 
-**VM aislada:** Cowork corre en una maquina virtual ligera en tu computadora, separada de tu sistema operativo.
+**Isolated VM:** Cowork runs in a lightweight virtual machine on your computer, separate from your operating system.
 
-**MCP (Model Context Protocol):** Protocolo abierto de Anthropic para conectar IA con herramientas externas.
+**MCP (Model Context Protocol):** Anthropic's open protocol for connecting AI with external tools.
 
-**Skills:** Conocimiento especializado que Claude usa automaticamente para crear documentos de alta calidad.
+**Skills:** Specialized knowledge that Claude uses automatically to create high-quality documents.
 
-**Plugins:** Paquetes que agrupan skills, comandos slash, conectores MCP y sub-agentes para dominios especificos.
+**Plugins:** Packages that bundle skills, slash commands, MCP connectors, and sub-agents for specific domains.
 
-**Archivos de contexto:** Archivos markdown que almacenan tu identidad, voz y preferencias. Se componen con el tiempo.
+**Context files:** Markdown files that store your identity, voice, and preferences. They compound over time.
 
-## Fuentes
+## Sources
 
 - [Get started with Cowork — Claude Help Center](https://support.claude.com/en/articles/13345190-get-started-with-cowork)
 - [Introducing Cowork — Claude Blog](https://claude.com/blog/cowork-research-preview)

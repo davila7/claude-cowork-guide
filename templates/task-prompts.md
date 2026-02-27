@@ -1,118 +1,118 @@
-# Prompts probados para tareas comunes
+# Tested prompts for common tasks
 
-Prompts listos para copiar, pegar y adaptar.
-
----
-
-## Organizacion de archivos
-
-### Organizar por tipo
-```
-Organiza todos los archivos de esta carpeta en subcarpetas por tipo:
-- Imagenes (jpg, png, gif, svg, webp)
-- Documentos (pdf, docx, txt, md)
-- Hojas de calculo (xlsx, csv)
-- Presentaciones (pptx)
-- Otros (todo lo demas)
-No elimines nada. Muestra un resumen de cuantos archivos moviste a cada carpeta.
-```
-
-### Limpiar duplicados
-```
-Analiza esta carpeta y encuentra archivos duplicados (mismo contenido o nombre muy similar).
-Genera un reporte en markdown listando los duplicados encontrados con sus rutas.
-NO elimines nada — solo reporta. Yo decidire cuales borrar.
-```
-
-## Creacion de documentos
-
-### Reporte ejecutivo
-```
-Crea un documento Word con un reporte ejecutivo basado en [fuente de datos].
-Estructura:
-1. Resumen ejecutivo (maximo media pagina)
-2. Hallazgos principales (3-5 puntos con datos de soporte)
-3. Analisis detallado por [categoria/region/tema]
-4. Recomendaciones (accionables y priorizadas)
-5. Proximos pasos con responsables y fechas sugeridas
-Tono: Profesional, dirigido a [audiencia]. Maximo [X] paginas.
-```
-
-### Presentacion desde contenido existente
-```
-Transforma el contenido del archivo [nombre.md] en una presentacion PowerPoint.
-Lineamientos:
-- Maximo [N] slides
-- Poco texto por slide (bullets cortos, no parrafos)
-- Incluye slide de titulo, agenda, contenido y cierre
-- Diseno limpio con colores [especificar]
-- Agrega notas del presentador con los puntos de conversacion
-```
-
-## Analisis de datos
-
-### Exploracion inicial
-```
-Analiza el archivo [datos.csv/xlsx] y genera un reporte exploratorio:
-1. Dimensiones del dataset (filas, columnas)
-2. Tipos de datos por columna
-3. Valores nulos o faltantes (cantidad y porcentaje)
-4. Estadisticas descriptivas (media, mediana, min, max, desviacion)
-5. Distribucion de variables categoricas
-6. Posibles outliers
-7. Correlaciones entre variables numericas
-Exporta el reporte como HTML con graficos incluidos.
-```
-
-### Dashboard de metricas
-```
-Con los datos de [archivo], crea una pagina HTML interactiva que muestre:
-- KPIs principales en cards grandes al inicio
-- Graficos de tendencia temporal (lineas)
-- Comparacion entre [categorias] (barras)
-- Tabla detallada con los datos filtrable
-Usa colores profesionales. Que sea responsive.
-```
-
-## Investigacion
-
-### Sintesis de multiples fuentes
-```
-Investiga sobre [tema] usando busqueda web. Necesito:
-- Al menos 5 fuentes recientes y confiables
-- Sintesis de los puntos principales (no copia textual)
-- Perspectivas contrastantes si las hay
-- Datos cuantitativos cuando esten disponibles
-Formato: Markdown con secciones claras y fuentes citadas al final.
-```
-
-## Email y comunicacion
-
-### Redactar email profesional
-```
-Redacta un email profesional con estos parametros:
-- De: [tu nombre]
-- Para: [destinatario y su rol]
-- Proposito: [que quieres lograr]
-- Contexto: [background relevante]
-- Tono: [formal/semiformal/casual]
-- Largo: [corto/medio]
-- Call to action: [que quieres que haga el destinatario]
-```
-
-## Tareas programadas
-
-### Resumen semanal
-```
-/schedule cada viernes a las 5pm:
-Revisa todos los archivos creados o modificados esta semana en esta carpeta.
-Genera un resumen en markdown con:
-- Archivos nuevos creados (nombre y descripcion breve)
-- Archivos modificados (que cambio)
-- Estadisticas: total de archivos, espacio usado
-Guarda en /resumenes-semanales/YYYY-MM-DD-resumen.md
-```
+Ready-to-copy, paste, and adapt prompts.
 
 ---
 
-[Volver al indice](../README.md)
+## File organization
+
+### Organize by type
+```
+Organize all files in this folder into subfolders by type:
+- Images (jpg, png, gif, svg, webp)
+- Documents (pdf, docx, txt, md)
+- Spreadsheets (xlsx, csv)
+- Presentations (pptx)
+- Other (everything else)
+Don't delete anything. Show a summary of how many files you moved to each folder.
+```
+
+### Find duplicates
+```
+Analyze this folder and find duplicate files (same content or very similar names).
+Generate a markdown report listing the duplicates found with their paths.
+Do NOT delete anything — just report. I'll decide which ones to remove.
+```
+
+## Document creation
+
+### Executive report
+```
+Create a Word document with an executive report based on [data source].
+Structure:
+1. Executive summary (half page maximum)
+2. Main findings (3-5 points with supporting data)
+3. Detailed analysis by [category/region/topic]
+4. Recommendations (actionable and prioritized)
+5. Next steps with owners and suggested dates
+Tone: Professional, directed at [audience]. Maximum [X] pages.
+```
+
+### Presentation from existing content
+```
+Transform the content from the file [name.md] into a PowerPoint presentation.
+Guidelines:
+- Maximum [N] slides
+- Minimal text per slide (short bullets, not paragraphs)
+- Include title slide, agenda, content, and closing
+- Clean design with [specify] colors
+- Add speaker notes with talking points
+```
+
+## Data analysis
+
+### Initial exploration
+```
+Analyze the file [data.csv/xlsx] and generate an exploratory report:
+1. Dataset dimensions (rows, columns)
+2. Data types per column
+3. Null or missing values (count and percentage)
+4. Descriptive statistics (mean, median, min, max, standard deviation)
+5. Distribution of categorical variables
+6. Possible outliers
+7. Correlations between numerical variables
+Export the report as HTML with embedded charts.
+```
+
+### Metrics dashboard
+```
+With the data from [file], create an interactive HTML page that shows:
+- Main KPIs in large cards at the top
+- Time trend charts (lines)
+- Comparison between [categories] (bars)
+- Detailed filterable data table
+Use professional colors. Make it responsive.
+```
+
+## Research
+
+### Multi-source synthesis
+```
+Research [topic] using web search. I need:
+- At least 5 recent and reliable sources
+- Synthesis of the main points (not verbatim copies)
+- Contrasting perspectives if they exist
+- Quantitative data when available
+Format: Markdown with clear sections and sources cited at the end.
+```
+
+## Email and communication
+
+### Draft professional email
+```
+Draft a professional email with these parameters:
+- From: [your name]
+- To: [recipient and their role]
+- Purpose: [what you want to achieve]
+- Context: [relevant background]
+- Tone: [formal/semi-formal/casual]
+- Length: [short/medium]
+- Call to action: [what you want the recipient to do]
+```
+
+## Scheduled tasks
+
+### Weekly summary
+```
+/schedule every Friday at 5pm:
+Review all files created or modified this week in this folder.
+Generate a markdown summary with:
+- New files created (name and brief description)
+- Modified files (what changed)
+- Statistics: total files, space used
+Save in /weekly-summaries/YYYY-MM-DD-summary.md
+```
+
+---
+
+[Back to index](../README.md)

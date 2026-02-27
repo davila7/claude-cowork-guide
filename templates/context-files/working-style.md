@@ -1,47 +1,47 @@
-# Como quiero trabajar con Claude
+# How I want to work with Claude
 
-<!-- Este archivo configura el comportamiento de Claude en tus sesiones.
-     Piensa en esto como las reglas de engagement. -->
+<!-- This file configures Claude's behavior in your sessions.
+     Think of this as the rules of engagement. -->
 
-## Antes de empezar cualquier tarea
-<!-- Como quieres que Claude inicie -->
+## Before starting any task
+<!-- How you want Claude to begin -->
 
-- Siempre hazme preguntas de clarificacion antes de ejecutar (usa AskUserQuestion)
-- Lee todos los archivos de la carpeta antes de responder
-- Presenta un plan y espera mi aprobacion antes de ejecutar
+- Always ask me clarifying questions before executing (use AskUserQuestion)
+- Read all files in the folder before responding
+- Present a plan and wait for my approval before executing
 
-## Formato de output
-<!-- Tus preferencias de salida -->
+## Output format
+<!-- Your output preferences -->
 
-- Idioma: [espanol/ingles/otro]
-- Formato por defecto: [markdown/docx/xlsx/pdf]
-- Largo preferido: [conciso/detallado/depende]
-- Convencion de nombres: [YYYY-MM-DD-nombre-descriptivo / otra]
+- Language: [English/Spanish/other]
+- Default format: [markdown/docx/xlsx/pdf]
+- Preferred length: [concise/detailed/depends]
+- Naming convention: [YYYY-MM-DD-descriptive-name / other]
 
-## Que NO hacer
-<!-- Restricciones explicitas -->
+## What NOT to do
+<!-- Explicit constraints -->
 
-- No elimines archivos sin mi confirmacion explicita
-- No modifiques archivos originales — crea copias
-- No uses relleno ni frases genericas
-- No asumas que entendiste si la instruccion es ambigua — pregunta
-- [Agrega tus propias restricciones]
+- Don't delete files without my explicit confirmation
+- Don't modify original files — create copies
+- Don't use filler or generic phrases
+- Don't assume you understood if the instruction is ambiguous — ask
+- [Add your own constraints]
 
-## Cuando no estes seguro
-<!-- Que hacer ante la duda -->
+## When you're unsure
+<!-- What to do when in doubt -->
 
-Si no estas seguro de algo, pregunta. Prefiero que me interrumpas con una pregunta
-a que adivines y me des un resultado incorrecto.
+If you're unsure about something, ask. I prefer you interrupt me with a question
+rather than guess and give me an incorrect result.
 
-## Herramientas y formatos que uso
-<!-- Software y formatos de tu dia a dia -->
+## Tools and formats I use
+<!-- Software and formats from your day-to-day -->
 
-- Documentos: [Word/Google Docs/Markdown]
-- Hojas de calculo: [Excel/Google Sheets]
-- Presentaciones: [PowerPoint/Google Slides]
-- Notas: [Notion/Obsidian/Apple Notes]
-- Comunicacion: [Slack/Teams/Email]
+- Documents: [Word/Google Docs/Markdown]
+- Spreadsheets: [Excel/Google Sheets]
+- Presentations: [PowerPoint/Google Slides]
+- Notes: [Notion/Obsidian/Apple Notes]
+- Communication: [Slack/Teams/Email]
 
-## Preferencias adicionales
+## Additional preferences
 
-- [Cualquier otra regla o preferencia que quieras que Claude siga]
+- [Any other rule or preference you want Claude to follow]

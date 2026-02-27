@@ -1,42 +1,42 @@
-# Mi voz y estilo de comunicacion
+# My voice and communication style
 
-<!-- Este archivo le dice a Claude como te comunicas.
-     Mientras mas ejemplos incluyas, mejor sera el output. -->
+<!-- This file tells Claude how you communicate.
+     The more examples you include, the better the output. -->
 
-## Mi tono
-<!-- Describe como suenas cuando escribes bien -->
+## My tone
+<!-- Describe how you sound when you write well -->
 
-Mi tono es [formal/informal/tecnico/casual/directo/narrativo].
-Cuando escribo bien, sueno [describe como suenas].
+My tone is [formal/informal/technical/casual/direct/narrative].
+When I write well, I sound [describe how you sound].
 
-## Frases que uso
-<!-- Expresiones que son "tuyas" -->
+## Phrases I use
+<!-- Expressions that are "yours" -->
 
-- [frase que usas frecuentemente]
-- [otra frase]
-- [otra mas]
+- [phrase you frequently use]
+- [another phrase]
+- [another one]
 
-## Que suena MAL para mi
-<!-- Esto es igual de importante que lo que suena bien -->
+## What sounds BAD to me
+<!-- This is just as important as what sounds good -->
 
-- No uso [tipo de lenguaje que evitas]
-- Nunca digo [frase que no usarias]
-- Me molesta cuando [describe que no te gusta en la escritura]
+- I don't use [type of language you avoid]
+- I never say [phrase you wouldn't use]
+- It bothers me when [describe what you don't like in writing]
 
-## Ejemplos de escritura que representan mi estilo
+## Writing examples that represent my style
 
-### Ejemplo 1: [tipo de documento]
-<!-- Pega un parrafo real que hayas escrito y que te guste -->
+### Example 1: [document type]
+<!-- Paste a real paragraph you've written that you like -->
 
-[Tu texto aqui]
+[Your text here]
 
-### Ejemplo 2: [tipo de documento]
+### Example 2: [document type]
 
-[Tu texto aqui]
+[Your text here]
 
-## Formato preferido
-<!-- Como te gusta que se vean tus documentos -->
+## Preferred format
+<!-- How you like your documents to look -->
 
-- Largo tipico: [corto/medio/largo]
-- Estructura: [con headers/fluido/bullets/parrafos]
-- Nivel de detalle: [alto nivel/detallado/depende del contexto]
+- Typical length: [short/medium/long]
+- Structure: [with headers/flowing/bullets/paragraphs]
+- Level of detail: [high level/detailed/depends on context]

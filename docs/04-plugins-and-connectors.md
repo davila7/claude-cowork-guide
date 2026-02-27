@@ -1,184 +1,184 @@
-# Plugins y conectores
+# Plugins and connectors
 
 ## MCP: Model Context Protocol
 
-MCP es el protocolo abierto de Anthropic para conectar IA con herramientas externas. Es el estandar que permite a Claude comunicarse con servicios como Gmail, Google Calendar, Slack, Linear y otros. Cada conector se autentica de forma segura a traves de OAuth o API keys.
+MCP is Anthropic's open protocol for connecting AI with external tools. It's the standard that allows Claude to communicate with services like Gmail, Google Calendar, Slack, Linear, and others. Each connector authenticates securely via OAuth or API keys.
 
-## Plugins: de generalista a especialista
+## Plugins: from generalist to specialist
 
-Sin un plugin, Claude Cowork es un generalista brillante. Puede escribir, investigar, analizar, organizar y construir. Pero no conoce la terminologia de tu industria, el workflow de tu equipo, ni los outputs especificos que tu rol requiere.
+Without a plugin, Claude Cowork is a brilliant generalist. It can write, research, analyze, organize, and build. But it doesn't know your industry's terminology, your team's workflow, or the specific outputs your role requires.
 
-Los plugins cambian eso. Son paquetes de skills, comandos slash, sub-agentes y conectores MCP disenados para funciones de trabajo especificas.
+Plugins change that. They are packages of skills, slash commands, sub-agents, and MCP connectors designed for specific work functions.
 
-### Plugins oficiales de Anthropic
+### Official Anthropic plugins
 
-Anthropic lanzo plugins para estas areas en enero 2026 y continua expandiendo la libreria:
+Anthropic launched plugins for these areas in January 2026 and continues expanding the library:
 
-| Plugin | Para quien | Que hace |
-|--------|-----------|----------|
-| **Productivity** | Cualquiera | Gestion de tareas, calendarios, workflows diarios |
-| **Marketing** | Marketers | Drafts de contenido, planificacion de campanas, voz de marca |
-| **Sales** | Vendedores | Investigacion de cuentas, prep de llamadas, outreach, battlecards |
-| **Finance** | Finanzas | Modelado financiero, analisis, reportes |
-| **Data Analysis** | Analistas | SQL, dashboards, exploracion de datasets, deteccion de anomalias |
-| **Legal** | Abogados | Revision de contratos, investigacion legal, drafting |
+| Plugin | For whom | What it does |
+|--------|----------|-------------|
+| **Productivity** | Anyone | Task management, calendars, daily workflows |
+| **Marketing** | Marketers | Content drafts, campaign planning, brand voice |
+| **Sales** | Salespeople | Account research, call prep, outreach, battlecards |
+| **Finance** | Finance teams | Financial modeling, analysis, reports |
+| **Data Analysis** | Analysts | SQL, dashboards, dataset exploration, anomaly detection |
+| **Legal** | Lawyers | Contract review, legal research, drafting |
 | **Product Management** | PMs | Specs, roadmaps, user stories |
-| **Customer Support** | Soporte | Manejo de tickets, drafts de respuestas |
-| **Enterprise Search** | Todos | Busqueda a traves de herramientas conectadas |
-| **Biology Research** | Investigadores | Literatura cientifica y datos |
-| **HR** | Recursos humanos | Gestion de personal, procesos |
-| **Design** | Disenadores | Workflows de diseno |
-| **Engineering** | Ingenieros | Documentacion tecnica, procesos |
-| **Operations** | Operaciones | Gestion operativa |
+| **Customer Support** | Support teams | Ticket handling, response drafts |
+| **Enterprise Search** | Everyone | Search across connected tools |
+| **Biology Research** | Researchers | Scientific literature and data |
+| **HR** | Human resources | Personnel management, processes |
+| **Design** | Designers | Design workflows |
+| **Engineering** | Engineers | Technical documentation, processes |
+| **Operations** | Operations teams | Operational management |
 
-### Como instalar un plugin
+### How to install a plugin
 
-1. Abre Claude Cowork
-2. Haz clic en el boton **"+"** en la barra de chat, luego en **"Plugins"** para explorar la libreria
-3. O ve a [claude.com/plugins](https://claude.com/plugins) para ver todo lo disponible
-4. Elige el plugin y haz clic en **Install**
-5. Escribe **"/"** en cualquier chat de Cowork para ver los comandos slash que agrego
+1. Open Claude Cowork
+2. Click the **"+"** button in the chat bar, then **"Plugins"** to browse the library
+3. Or go to [claude.com/plugins](https://claude.com/plugins) to see everything available
+4. Choose the plugin and click **Install**
+5. Type **"/"** in any Cowork chat to see the slash commands it added
 
-### Primeros prompts por plugin
+### First prompts by plugin
 
-**Despues de instalar Productivity:**
+**After installing Productivity:**
 ```
-/productivity:start Revisemos que necesito hacer hoy y configuremos mi lista de tareas.
-```
-
-**Despues de instalar Marketing:**
-```
-/marketing:draft-content Escribe un post de LinkedIn sobre [tema]. Usa el tono
-de mi archivo brand-voice.md. Audiencia: [audiencia]. Objetivo: [que quiero
-que la gente haga].
+/productivity:start Let's review what I need to do today and set up my task list.
 ```
 
-**Despues de instalar Data Analysis:**
+**After installing Marketing:**
 ```
-/data:explore Tengo un CSV en esta carpeta. Dame un resumen de que contiene,
-senala anomalias, y sugiere tres analisis que vale la pena correr.
-```
-
-**Despues de instalar Sales:**
-```
-/sales:account-research Investigame la empresa [nombre]. Necesito: tamano,
-industria, competidores, noticias recientes, y 3 puntos de conversacion
-para una llamada de discovery.
+/marketing:draft-content Write a LinkedIn post about [topic]. Use the tone
+from my brand-voice.md file. Audience: [audience]. Goal: [what I want
+people to do].
 ```
 
-El output con un plugin activo es notablemente mas estructurado y opinionado que un prompt generico. El plugin sabe como se ve un buen output para tu funcion.
-
-### Estructura de un plugin
-
+**After installing Data Analysis:**
 ```
-mi-plugin/
-|-- plugin.json          # Manifiesto del plugin
-|-- .mcp.json            # Conexiones de herramientas MCP
-|-- commands/            # Comandos slash
-|-- skills/              # Skills auto-activados
+/data:explore I have a CSV in this folder. Give me a summary of what it contains,
+flag anomalies, and suggest three analyses worth running.
 ```
 
-### Personalizar plugins
+**After installing Sales:**
+```
+/sales:account-research Research the company [name] for me. I need: size,
+industry, competitors, recent news, and 3 talking points
+for a discovery call.
+```
 
-Puedes adaptar cualquier plugin a tus necesidades:
+The output with an active plugin is noticeably more structured and opinionated than a generic prompt. The plugin knows what good output looks like for your function.
 
-- **Cambiar conectores:** edita `.mcp.json` para apuntar a tu stack de herramientas
-- **Agregar contexto de empresa:** incluye tu terminologia, estructura organizacional y procesos en los archivos de skills
-- **Ajustar workflows:** modifica los flujos para que coincidan con como tu equipo realmente trabaja
+### Plugin structure
+
+```
+my-plugin/
+|-- plugin.json          # Plugin manifest
+|-- .mcp.json            # MCP tool connections
+|-- commands/            # Slash commands
+|-- skills/              # Auto-activated skills
+```
+
+### Customizing plugins
+
+You can adapt any plugin to your needs:
+
+- **Change connectors:** edit `.mcp.json` to point to your tool stack
+- **Add company context:** include your terminology, organizational structure, and processes in the skill files
+- **Adjust workflows:** modify flows to match how your team actually works
 
 ---
 
-## Connectors: integraciones en vivo
+## Connectors: live integrations
 
-### Como conectar herramientas
+### How to connect tools
 
-1. Ve a **Settings > Connectors** en Claude Desktop
-2. Explora el directorio (50+ integraciones)
-3. Haz clic en un conector y presiona **"Add"**
-4. Autenticate con la herramienta. Listo.
+1. Go to **Settings > Connectors** in Claude Desktop
+2. Browse the directory (50+ integrations)
+3. Click a connector and press **"Add"**
+4. Authenticate with the tool. Done.
 
-Solo se hace una vez. Despues, Claude accede a datos en vivo de esa herramienta en cada sesion.
+It's done only once. After that, Claude accesses live data from that tool in every session.
 
-### Primeros prompts con connectors
+### First prompts with connectors
 
-**Despues de conectar Slack:**
+**After connecting Slack:**
 ```
-Busca mis mensajes de Slack de los ultimos 7 dias y dame un resumen de
-todo lo que necesito dar seguimiento. Organiza por urgencia.
-```
-
-**Despues de conectar Google Drive:**
-```
-Encuentra el documento mas reciente sobre [nombre del proyecto] en mi Drive.
-Leelo y dime las tres cosas mas importantes que necesito saber.
+Search my Slack messages from the last 7 days and give me a summary of
+everything I need to follow up on. Organize by urgency.
 ```
 
-**Despues de conectar Gmail:**
+**After connecting Google Drive:**
 ```
-Revisa mis emails no leidos de hoy. Clasifícalos por prioridad y dime
-cuales requieren respuesta inmediata.
-```
-
-**Despues de conectar Google Calendar:**
-```
-Muestrame mi agenda de manana. Identifica conflictos de horario y
-sugiere un orden de prioridad para mis reuniones.
+Find the most recent document about [project name] in my Drive.
+Read it and tell me the three most important things I need to know.
 ```
 
-### Tipos de conexion
+**After connecting Gmail:**
+```
+Review my unread emails from today. Classify them by priority and tell me
+which ones require an immediate response.
+```
 
-**Web connectors:** funcionan en todas partes, incluyendo claude.ai. Pueden ser built-in (por Anthropic) o custom (HTTP Streamable + OAuth).
+**After connecting Google Calendar:**
+```
+Show me my schedule for tomorrow. Identify schedule conflicts and
+suggest a priority order for my meetings.
+```
 
-**Desktop connectors:** MCP servers locales empaquetados por Anthropic para instalacion con un clic.
+### Connection types
 
-**Custom MCP servers:** configurados manualmente editando un archivo JSON de configuracion.
+**Web connectors:** work everywhere, including claude.ai. Can be built-in (by Anthropic) or custom (HTTP Streamable + OAuth).
 
-### Conectores disponibles (febrero 2026)
+**Desktop connectors:** local MCP servers packaged by Anthropic for one-click installation.
 
-**Productividad:** Google Workspace (Calendar, Drive, Gmail), Slack, Notion, Asana, Figma
+**Custom MCP servers:** manually configured by editing a JSON configuration file.
 
-**Ventas y CRM:** Apollo, Clay, Outreach, Common Room
+### Available connectors (February 2026)
+
+**Productivity:** Google Workspace (Calendar, Drive, Gmail), Slack, Notion, Asana, Figma
+
+**Sales and CRM:** Apollo, Clay, Outreach, Common Room
 
 **Legal:** DocuSign, LegalZoom, Harvey
 
-**Finanzas y datos:** FactSet, MSCI, LSEG, S&P Global
+**Finance and data:** FactSet, MSCI, LSEG, S&P Global
 
-**Marketing y contenido:** WordPress, Similarweb
+**Marketing and content:** WordPress, Similarweb
 
-**Desarrollo:** Linear, GitHub
+**Development:** Linear, GitHub
 
-Todos los conectores son gratuitos. Solo necesitas un plan pago de Claude y una suscripcion activa al servicio que quieres conectar.
+All connectors are free. You just need a paid Claude plan and an active subscription to the service you want to connect.
 
-### Permisos por conector
+### Permissions per connector
 
-Para cada conector, configura herramientas individuales con tres niveles:
+For each connector, configure individual tools with three levels:
 
-- **Allow:** se ejecuta automaticamente sin preguntar
-- **Ask:** confirma contigo antes de ejecutar
-- **Block:** nunca se ejecuta
+- **Allow:** executes automatically without asking
+- **Ask:** confirms with you before executing
+- **Block:** never executes
 
-Ejemplo practico: puedes permitir que Claude busque en tus emails (Allow) pero requerir confirmacion para enviar (Ask) o bloquear que borre emails (Block).
+Practical example: you can allow Claude to search your emails (Allow) but require confirmation to send (Ask) or block it from deleting emails (Block).
 
 ---
 
-## Enterprise: Marketplaces privados
+## Enterprise: Private marketplaces
 
-Los administradores de Team y Enterprise pueden:
+Team and Enterprise administrators can:
 
-- Crear marketplaces de plugins privados para su organizacion
-- Usar repositorios privados de GitHub como fuente de plugins (beta privado)
-- Provisionar plugins por usuario
-- Configurar auto-instalacion de plugins para el equipo
-- Crear plugins especializados por departamento (HR, legal, finanzas, etc.)
+- Create private plugin marketplaces for their organization
+- Use private GitHub repositories as plugin sources (private beta)
+- Provision plugins per user
+- Configure auto-installation of plugins for the team
+- Create department-specific plugins (HR, legal, finance, etc.)
 
-Todo se gestiona desde el menu **Customize** que unifica plugins, skills y conectores.
+Everything is managed from the **Customize** menu that unifies plugins, skills, and connectors.
 
-## Recursos
+## Resources
 
-- [Repositorio open source de plugins](https://github.com/anthropics/knowledge-work-plugins)
+- [Open source plugin repository](https://github.com/anthropics/knowledge-work-plugins)
 - [Blog: Cowork and plugins across enterprise](https://claude.com/blog/cowork-plugins-across-enterprise)
-- [Directorio de plugins](https://claude.com/plugins)
+- [Plugin directory](https://claude.com/plugins)
 
 ---
 
-[Volver al indice](../README.md) | [Anterior: Buenas practicas](03-best-practices.md) | [Siguiente: Casos de uso](05-use-cases.md)
+[Back to index](../README.md) | [Previous: Best practices](03-best-practices.md) | [Next: Use cases](05-use-cases.md)

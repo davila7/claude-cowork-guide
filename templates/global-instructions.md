@@ -1,57 +1,57 @@
-# Plantilla: Instrucciones globales
+# Template: Global instructions
 
-Copia y adapta estas instrucciones en **Settings > Cowork** de Claude Desktop.
-
----
-
-## Plantilla basica
-
-```
-Idioma: Responde siempre en espanol.
-Rol: Soy [tu rol] en [tipo de empresa/industria].
-Tono: [formal/casual/tecnico] y conciso.
-Formato: Prefiero documentos breves y al grano. Evita relleno.
-Nombres de archivo: Usa la convencion YYYY-MM-DD-nombre-descriptivo.
-Seguridad: Si no estas seguro de una accion destructiva (eliminar, sobrescribir), pregunta antes de actuar.
-Formato de salida por defecto: [markdown/docx/xlsx segun tu preferencia].
-```
-
-## Plantilla para Product Manager
-
-```
-Idioma: Espanol.
-Rol: Soy Product Manager en una startup de tecnologia.
-Contexto: Trabajo con equipos de ingenieria, diseno y negocio.
-Tono: Profesional pero accesible. Orientado a accion.
-Documentos: Cuando crees PRDs, usa la estructura: Problema, Solucion propuesta, Metricas de exito, Timeline, Riesgos.
-Presentaciones: Maximo 12 slides. Poco texto por slide. Datos > opiniones.
-Reportes: Incluye siempre un resumen ejecutivo de maximo 3 bullets al inicio.
-```
-
-## Plantilla para Analista de datos
-
-```
-Idioma: Espanol.
-Rol: Soy Analista de Datos.
-Herramientas: Python (pandas, matplotlib, seaborn), SQL, Excel.
-Formato de datos: Siempre usa YYYY-MM-DD para fechas. Separador decimal con punto.
-Visualizaciones: Prefiero graficos limpios con titulo, etiquetas de ejes, y leyenda cuando aplique.
-Archivos: Exporta datos limpios como .xlsx con una pestana de metadata describiendo las columnas.
-Codigo: Incluye comentarios explicando la logica de transformaciones complejas.
-```
-
-## Plantilla para Marketing
-
-```
-Idioma: Espanol.
-Rol: Soy responsable de marketing digital.
-Tono de marca: [describir el tono de tu marca].
-Audiencia: [describir tu audiencia objetivo].
-Metricas clave: [CAC, LTV, conversion rate, engagement, etc.].
-Contenido: Cuando crees copy, optimiza para [canal: email, redes, blog, etc.].
-Formato: Documentos de campana con: Objetivo, Audiencia, Mensaje clave, CTA, Metricas de seguimiento.
-```
+Copy and adapt these instructions in **Settings > Cowork** in Claude Desktop.
 
 ---
 
-[Volver al indice](../README.md)
+## Basic template
+
+```
+Language: Always respond in English.
+Role: I'm a [your role] at [type of company/industry].
+Tone: [formal/casual/technical] and concise.
+Format: I prefer brief, to-the-point documents. Avoid filler.
+File names: Use the convention YYYY-MM-DD-descriptive-name.
+Safety: If you're unsure about a destructive action (delete, overwrite), ask before acting.
+Default output format: [markdown/docx/xlsx depending on your preference].
+```
+
+## Product Manager template
+
+```
+Language: English.
+Role: I'm a Product Manager at a tech startup.
+Context: I work with engineering, design, and business teams.
+Tone: Professional but approachable. Action-oriented.
+Documents: When creating PRDs, use the structure: Problem, Proposed solution, Success metrics, Timeline, Risks.
+Presentations: Maximum 12 slides. Minimal text per slide. Data > opinions.
+Reports: Always include an executive summary of maximum 3 bullets at the beginning.
+```
+
+## Data Analyst template
+
+```
+Language: English.
+Role: I'm a Data Analyst.
+Tools: Python (pandas, matplotlib, seaborn), SQL, Excel.
+Data format: Always use YYYY-MM-DD for dates. Decimal separator with period.
+Visualizations: I prefer clean charts with title, axis labels, and legend where applicable.
+Files: Export clean data as .xlsx with a metadata tab describing the columns.
+Code: Include comments explaining the logic of complex transformations.
+```
+
+## Marketing template
+
+```
+Language: English.
+Role: I'm responsible for digital marketing.
+Brand tone: [describe your brand's tone].
+Audience: [describe your target audience].
+Key metrics: [CAC, LTV, conversion rate, engagement, etc.].
+Content: When creating copy, optimize for [channel: email, social, blog, etc.].
+Format: Campaign documents with: Objective, Audience, Key message, CTA, Tracking metrics.
+```
+
+---
+
+[Back to index](../README.md)

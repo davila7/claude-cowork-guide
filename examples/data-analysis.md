@@ -1,54 +1,54 @@
-# Ejemplo: Analisis de datos
+# Example: Data analysis
 
-## Escenario
+## Scenario
 
-Tienes un dataset de ventas en CSV y necesitas un analisis completo con visualizaciones y un Excel ejecutivo.
+You have a sales dataset in CSV and need a complete analysis with visualizations and an executive Excel.
 
-## Prompt utilizado
+## Prompt used
 
 ```
-Analiza el archivo ventas_2025.csv y crea dos entregables:
+Analyze the file sales_2025.csv and create two deliverables:
 
-ENTREGABLE 1: Excel ejecutivo (analisis-ventas.xlsx)
-- Tab "Resumen": KPIs principales (total ventas, ticket promedio, crecimiento MoM)
-- Tab "Por Region": Tabla pivot con ventas por region y mes, con formato condicional
-- Tab "Top Productos": Ranking de productos por revenue, con grafico de barras
-- Tab "Tendencias": Graficos de linea mostrando tendencias mensuales
-- Tab "Datos Limpios": Dataset limpio y estandarizado
+DELIVERABLE 1: Executive Excel (sales-analysis.xlsx)
+- Tab "Summary": Main KPIs (total sales, average ticket, MoM growth)
+- Tab "By Region": Pivot table with sales by region and month, with conditional formatting
+- Tab "Top Products": Product ranking by revenue, with bar chart
+- Tab "Trends": Line charts showing monthly trends
+- Tab "Clean Data": Clean and standardized dataset
 
-Formulas requeridas: VLOOKUP donde aplique, SUMIFS para agregaciones, formato condicional para resaltar en verde los meses que superaron la meta y en rojo los que no.
+Required formulas: VLOOKUP where applicable, SUMIFS for aggregations, conditional formatting to highlight in green the months that exceeded the target and in red those that didn't.
 
-ENTREGABLE 2: Dashboard HTML (dashboard-ventas.html)
-- Cards con KPIs principales al inicio
-- Grafico de lineas: ventas mensuales con linea de tendencia
-- Grafico de barras: comparacion por region
-- Grafico de pastel: distribucion por categoria de producto
-- Tabla interactiva con los datos detallados
-- Diseno responsive, colores profesionales
+DELIVERABLE 2: HTML Dashboard (sales-dashboard.html)
+- Cards with main KPIs at the top
+- Line chart: monthly sales with trend line
+- Bar chart: comparison by region
+- Pie chart: distribution by product category
+- Interactive table with detailed data
+- Responsive design, professional colors
 
-Asunciones:
-- Meta mensual: $100,000
-- Moneda: USD
-- Si hay datos faltantes, documentalos pero no inventes valores
+Assumptions:
+- Monthly target: $100,000
+- Currency: USD
+- If there's missing data, document it but don't make up values
 ```
 
-## Que hace Claude
+## What Claude does
 
-1. Lee y explora el dataset (dimensiones, tipos, calidad)
-2. Limpia los datos (valores nulos, formatos inconsistentes)
-3. Calcula metricas y KPIs
-4. Crea el Excel con formulas funcionales y formato
-5. Genera el dashboard HTML con graficos interactivos
-6. Documenta cualquier problema encontrado en los datos
+1. Reads and explores the dataset (dimensions, types, quality)
+2. Cleans the data (null values, inconsistent formats)
+3. Calculates metrics and KPIs
+4. Creates the Excel with functional formulas and formatting
+5. Generates the HTML dashboard with interactive charts
+6. Documents any issues found in the data
 
 ## Tips
 
-- Proporciona contexto sobre las columnas si los nombres no son descriptivos
-- Especifica la meta o benchmark contra el cual comparar
-- Pide que documente asunciones y decisiones de limpieza
-- Si el dataset es grande (>10k filas), menciona que optimice el rendimiento
-- Siempre pide que verifique los calculos con un ejemplo manual
+- Provide context about columns if the names aren't descriptive
+- Specify the target or benchmark to compare against
+- Ask it to document assumptions and cleaning decisions
+- If the dataset is large (>10k rows), mention it should optimize performance
+- Always ask it to verify calculations with a manual example
 
 ---
 
-[Volver al indice](../README.md)
+[Back to index](../README.md)
