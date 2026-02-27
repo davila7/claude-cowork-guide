@@ -1,35 +1,35 @@
-# Sobre mi
+# About me
 
-<!-- Completa esta plantilla con tu informacion. Claude lee este archivo
-     al inicio de cada sesion para entender quien eres y como trabajas. -->
+<!-- Fill in this template with your information. Claude reads this file
+     at the start of each session to understand who you are and how you work. -->
 
-## Quien soy
-<!-- Tu nombre, tu rol, tu empresa o contexto profesional -->
+## Who I am
+<!-- Your name, your role, your company or professional context -->
 
-Soy [nombre]. Trabajo como [rol] en [empresa/tipo de empresa].
+I'm [name]. I work as [role] at [company/type of company].
 
-## Que hago
-<!-- Describe tu trabajo dia a dia en 2-3 oraciones -->
+## What I do
+<!-- Describe your day-to-day work in 2-3 sentences -->
 
-Mi trabajo consiste en [descripcion de tus responsabilidades principales].
-Los proyectos tipicos que manejo incluyen [tipos de proyectos].
+My work consists of [description of your main responsibilities].
+Typical projects I handle include [types of projects].
 
-## Que significa exito para mi
-<!-- Como se ve un buen resultado en tu trabajo -->
+## What success means to me
+<!-- What does a good result look like in your work -->
 
-Un buen resultado en mi trabajo se ve asi: [describe como se ve el exito].
+A good result in my work looks like: [describe what success looks like].
 
-## Ejemplo de trabajo del que estoy orgulloso
-<!-- Incluye un ejemplo concreto. Esto ayuda a Claude a calibrar calidad. -->
+## Example of work I'm proud of
+<!-- Include a concrete example. This helps Claude calibrate quality. -->
 
-[Describe brevemente un proyecto o entregable reciente que salio bien y por que.]
+[Briefly describe a recent project or deliverable that went well and why.]
 
-## Con quien trabajo
-<!-- Contexto sobre tu equipo y stakeholders -->
+## Who I work with
+<!-- Context about your team and stakeholders -->
 
-Reporto a [rol]. Trabajo con equipos de [areas]. Mis principales stakeholders son [quienes].
+I report to [role]. I work with teams in [areas]. My main stakeholders are [who].
 
-## Industria y contexto
-<!-- Terminologia, acronimos o contexto especifico de tu industria -->
+## Industry and context
+<!-- Terminology, acronyms, or context specific to your industry -->
 
-Mi industria es [industria]. Terminos que uso frecuentemente: [lista de acronimos o jerga].
+My industry is [industry]. Terms I frequently use: [list of acronyms or jargon].

@@ -1,111 +1,111 @@
-# Primeros pasos con Claude Cowork
+# Getting started with Claude Cowork
 
-## Requisitos previos
+## Prerequisites
 
-**Sistema operativo:** macOS o Windows (x64 solamente). No disponible en web ni movil.
+**Operating system:** macOS or Windows (x64 only). Not available on web or mobile.
 
-**Plan de Claude:** Pro ($20/mes), Max ($100-200/mes), Team o Enterprise. Cowork no esta disponible en el plan gratuito.
+**Claude plan:** Pro ($20/mo), Max ($100-200/mo), Team, or Enterprise. Cowork is not available on the free plan.
 
-**Conexion a internet:** Requerida durante toda la sesion.
+**Internet connection:** Required throughout the entire session.
 
-**App:** Descargar la ultima version de Claude Desktop desde [claude.com/download](https://claude.com/download).
+**App:** Download the latest version of Claude Desktop from [claude.com/download](https://claude.com/download).
 
-## El cambio mental mas importante
+## The most important mindset shift
 
-> ChatGPT te entreno para escribir mejores prompts. Cowork te entrena para construir mejor contexto. Uno es una habilidad que se deprecia. El otro se acumula.
+> ChatGPT trained you to write better prompts. Cowork trains you to build better context. One is a skill that depreciates. The other compounds.
 
-Cowork no es un chatbot. No es una caja de texto donde escribes y recibes una respuesta. Es un agente que vive en tu escritorio, lee y escribe en carpetas de tu computadora, crea documentos con formato profesional, y cuando no tiene suficiente informacion para hacer algo bien, te pregunta — en lugar de adivinar y darte basura pulida.
+Cowork is not a chatbot. It's not a text box where you type and receive a response. It's an agent that lives on your desktop, reads and writes to folders on your computer, creates professionally formatted documents, and when it doesn't have enough information to do something well, it asks you — instead of guessing and giving you polished garbage.
 
-## Tus primeros 30 minutos (guia paso a paso)
+## Your first 30 minutes (step-by-step guide)
 
-Bloquea 30 minutos en tu calendario. Esto es todo lo que necesitas.
+Block 30 minutes on your calendar. That's all you need.
 
-### Minutos 0-5: Instalar y abrir
+### Minutes 0-5: Install and open
 
-1. Ve a [claude.com/download](https://claude.com/download) y descarga la app de escritorio
-2. Inicia sesion o crea una cuenta con plan Pro como minimo
-3. Abre la app y busca la pestana **Cowork** en la parte superior
-4. Haz clic para cambiar al modo Cowork
+1. Go to [claude.com/download](https://claude.com/download) and download the desktop app
+2. Sign in or create an account with at least a Pro plan
+3. Open the app and look for the **Cowork** tab at the top
+4. Click to switch to Cowork mode
 
-Al entrar por primera vez, veras un mensaje que dice "Setting up Claude's workspace" — esto es normal y significa que Cowork esta configurando el entorno.
+When you enter for the first time, you'll see a message saying "Setting up Claude's workspace" — this is normal and means Cowork is configuring the environment.
 
-### Minutos 5-10: Crear tus archivos de contexto
+### Minutes 5-10: Create your context files
 
-Esta es la estrategia mas subestimada de todo Cowork. Deja de pensar en mejores prompts y empieza a pensar en mejores archivos.
+This is the most underrated strategy in all of Cowork. Stop thinking about better prompts and start thinking about better files.
 
-Crea una carpeta llamada **"Claude Context"** y dentro de ella, tres archivos markdown:
+Create a folder called **"Claude Context"** and inside it, three markdown files:
 
-**`about-me.md`** — Quien eres, que haces, tu rol, como se ve el exito en tu trabajo. Incluye un ejemplo de trabajo del que estes orgulloso.
+**`about-me.md`** — Who you are, what you do, your role, what success looks like in your work. Include an example of work you're proud of.
 
-**`brand-voice.md`** — Como te comunicas. Tus frases. Que suena mal para ti. Ejemplos de escritura que representan tu estilo. Tu tono.
+**`brand-voice.md`** — How you communicate. Your phrases. What sounds wrong to you. Writing examples that represent your style. Your tone.
 
-**`working-style.md`** — Como quieres que Claude se comporte. Prefieres que pregunte primero? Salidas cortas o largas? Que formatos de archivo prefieres?
+**`working-style.md`** — How you want Claude to behave. Do you prefer it asks first? Short or long outputs? What file formats do you prefer?
 
-Estos archivos se componen con el tiempo. Cada semana que los refinas, Claude mejora en tu trabajo especifico. Es la inversion mas subestimada de toda esta guia.
+These files compound over time. Every week you refine them, Claude gets better at your specific work. It's the most underrated investment in this entire guide.
 
-> **Tip:** Si prefieres hablar a escribir, usa una herramienta de voz-a-texto para dictar estos archivos. Lo que importa es meter tu contexto en texto — como lo hagas es lo de menos.
+> **Tip:** If you prefer talking over writing, use a voice-to-text tool to dictate these files. What matters is getting your context into text — how you do it doesn't matter.
 
-### Minutos 10-15: Configurar instrucciones globales
+### Minutes 10-15: Set up global instructions
 
-Ve a **Settings > Cowork** en la app de escritorio. Haz clic en "Edit" junto a Global Instructions. Pega lo esencial de tus tres archivos: quien eres, como te comunicas, y como quieres que Claude trabaje contigo. Guarda.
+Go to **Settings > Cowork** in the desktop app. Click "Edit" next to Global Instructions. Paste the essentials from your three files: who you are, how you communicate, and how you want Claude to work with you. Save.
 
-Esta es la inversion unica que te devuelve valor en cada sesion para siempre. Ver [plantilla de instrucciones globales](../templates/global-instructions.md) para ejemplos por rol.
+This is the one-time investment that pays back value in every session forever. See [global instructions template](../templates/global-instructions.md) for role-specific examples.
 
-### Minutos 15-20: Tu primera tarea real
+### Minutes 15-20: Your first real task
 
-Selecciona tu carpeta "Claude Context". Inicia una nueva sesion. Escribe:
-
-```
-Lee todos los archivos de esta carpeta. Despues ayudame a [TU TAREA REAL].
-Antes de empezar — hazme preguntas de clarificacion para asegurarte de que
-vas en la direccion correcta.
-```
-
-Observa lo que pasa. Responde las preguntas. Itera. Ten una conversacion. Los mejores primeros trabajos son cosas que ya sabes hacer bien — porque puedes notar inmediatamente si el resultado esta bien o no.
-
-### Minutos 20-25: Instalar un plugin
-
-Haz clic en el boton **"+"** en la barra de chat. Haz clic en **Plugins** y explora la libreria. Elige uno que encaje con tu rol. Despues de instalarlo, escribe "/" para ver los comandos slash que agrega. Prueba uno.
-
-Ver [guia de plugins](04-plugins-and-connectors.md) para la lista completa.
-
-### Minutos 25-30: Conectar una herramienta
-
-Ve a **Settings > Connectors**. Conecta la herramienta que mas uses: Slack, Google Drive, Gmail, Notion, o la que sea. Autenticala.
-
-Despues pidele algo a Claude sobre esa herramienta. Observa como jala datos en vivo en lugar de pedirte que copies y pegues cualquier cosa.
-
-Ese es el momento en que hace clic.
-
-## Instrucciones por carpeta
-
-Para proyectos recurrentes, agrega instrucciones especificas al seleccionar una carpeta. Cada carpeta de cliente puede tener su propio brief que Claude carga automaticamente. Cada sesion con ese proyecto arranca con contexto completo, cada vez.
-
-Ver [plantilla de instrucciones por carpeta](../templates/folder-instructions.md) para ejemplos.
-
-## Tu primer prompt de verificacion
-
-Despues de configurar todo, abre una sesion nueva y pregunta:
+Select your "Claude Context" folder. Start a new session. Type:
 
 ```
-Antes de que empecemos cualquier trabajo, dime que sabes sobre mi,
-como me gusta trabajar, y que preferencias tienes cargadas.
+Read all the files in this folder. Then help me with [YOUR REAL TASK].
+Before starting — ask me clarifying questions to make sure you're
+heading in the right direction.
 ```
 
-Si las instrucciones se cargaron correctamente, Claude las reflejara claramente. Si algo falta o esta mal, corrigelo ahora antes de hacer trabajo real.
+Watch what happens. Answer the questions. Iterate. Have a conversation. The best first tasks are things you already know how to do well — because you can immediately tell if the result is right or not.
 
-## Cosas importantes a recordar
+### Minutes 20-25: Install a plugin
 
-**La app debe permanecer abierta.** Si cierras Claude Desktop, la sesion se detiene. El modo suspension esta bien — la sesion sobrevive. Pero cerrar la ventana mientras el trabajo corre, no.
+Click the **"+"** button in the chat bar. Click **Plugins** and browse the library. Choose one that fits your role. After installing, type "/" to see the slash commands it adds. Try one.
 
-**Claude pide permiso antes de eliminar.** Nunca borrara archivos permanentemente sin tu confirmacion explicita. Habilita la proteccion contra eliminacion en settings.
+See [plugin guide](04-plugins-and-connectors.md) for the full list.
 
-**No hay memoria entre sesiones.** Cada sesion empieza desde cero. Los archivos de contexto y las instrucciones globales son tu solucion. Documenta decisiones importantes en archivos que Claude pueda leer.
+### Minutes 25-30: Connect a tool
 
-**Consume mas cuota que el chat.** Tareas multi-paso con lectura de archivos, creacion de documentos y sub-tareas paralelas usan significativamente mas compute. Si estas en Pro y haces uso pesado diario, monitorea Settings > Usage. Si llegas al limite constantemente, Max puede valer la pena.
+Go to **Settings > Connectors**. Connect the tool you use most: Slack, Google Drive, Gmail, Notion, or whichever one. Authenticate it.
 
-**Solo desktop.** No hay version movil, no hay sincronizacion entre dispositivos. Si trabajas en multiples computadoras, pon tus archivos de contexto en una carpeta sincronizada en la nube (iCloud, Dropbox, Google Drive) para que al menos tus archivos sean consistentes.
+Then ask Claude something about that tool. Watch how it pulls live data instead of asking you to copy and paste anything.
+
+That's the moment it clicks.
+
+## Folder instructions
+
+For recurring projects, add specific instructions when selecting a folder. Each client folder can have its own brief that Claude loads automatically. Every session with that project starts with full context, every time.
+
+See [folder instructions template](../templates/folder-instructions.md) for examples.
+
+## Your first verification prompt
+
+After setting everything up, open a new session and ask:
+
+```
+Before we start any work, tell me what you know about me,
+how I like to work, and what preferences you have loaded.
+```
+
+If the instructions loaded correctly, Claude will reflect them clearly. If something is missing or wrong, fix it now before doing real work.
+
+## Important things to remember
+
+**The app must stay open.** If you close Claude Desktop, the session stops. Sleep mode is fine — the session survives. But closing the window while work is running is not.
+
+**Claude asks permission before deleting.** It will never permanently delete files without your explicit confirmation. Enable deletion protection in settings.
+
+**No memory between sessions.** Every session starts from scratch. Context files and global instructions are your solution. Document important decisions in files that Claude can read.
+
+**Uses more quota than chat.** Multi-step tasks with file reading, document creation, and parallel sub-tasks use significantly more compute. If you're on Pro and do heavy daily use, monitor Settings > Usage. If you consistently hit the limit, Max may be worth it.
+
+**Desktop only.** No mobile version, no cross-device sync. If you work on multiple computers, put your context files in a cloud-synced folder (iCloud, Dropbox, Google Drive) so at least your files are consistent.
 
 ---
 
-[Volver al indice](../README.md) | [Siguiente: Funcionalidades](02-features.md)
+[Back to index](../README.md) | [Next: Features](02-features.md)

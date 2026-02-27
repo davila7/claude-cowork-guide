@@ -1,129 +1,129 @@
-# Buenas practicas
+# Best practices
 
-## La filosofia central
+## The core philosophy
 
-> Deja de pensar en mejores prompts. Empieza a pensar en mejor contexto.
+> Stop thinking about better prompts. Start thinking about better context.
 
-Los que mas provecho sacan de la IA no son los que escriben los prompts mas ingeniosos. Son los que construyeron sistemas: archivos que almacenan su contexto, instrucciones que persisten entre sesiones, plugins que especializan su herramienta, un setup que mejora cada semana.
+The people who get the most out of AI aren't the ones who write the cleverest prompts. They're the ones who built systems: files that store their context, instructions that persist between sessions, plugins that specialize their tool, a setup that improves every week.
 
-## 1. Construye tu sistema de archivos de contexto
+## 1. Build your context file system
 
-Esta es la practica numero uno. Antes de cualquier otra cosa.
+This is the number one practice. Before anything else.
 
-Crea una carpeta "Claude Context" con tres archivos:
+Create a "Claude Context" folder with three files:
 
-**`about-me.md`** — Quien eres. Que haces. Tu rol. Un ejemplo de trabajo del que estes orgulloso. Que significa exito en tu trabajo.
+**`about-me.md`** — Who you are. What you do. Your role. An example of work you're proud of. What success means in your job.
 
-**`brand-voice.md`** — Como te comunicas. Frases que usas. Que suena mal para ti. Ejemplos de escritura que representan tu estilo. Tu tono.
+**`brand-voice.md`** — How you communicate. Phrases you use. What sounds wrong to you. Writing examples that represent your style. Your tone.
 
-**`working-style.md`** — Como quieres que Claude se comporte. Preguntas primero? Salidas cortas o largas? Que formatos prefieres? Que NO debe hacer.
+**`working-style.md`** — How you want Claude to behave. Ask first? Short or long outputs? What formats do you prefer? What it should NOT do.
 
-Estos archivos se componen con el tiempo. Cada semana que los refinas, Claude mejora en tu trabajo especifico.
+These files compound over time. Every week you refine them, Claude gets better at your specific work.
 
-## 2. Usa AskUserQuestion como tu primer paso
+## 2. Use AskUserQuestion as your first step
 
-No intentes escribir el prompt perfecto. Deja que Cowork descubra lo que necesita saber.
+Don't try to write the perfect prompt. Let Cowork figure out what it needs to know.
 
-**El patron universal:**
+**The universal pattern:**
 
 ```
-Quiero [TU TAREA] para que [COMO SE VE EL EXITO].
-Primero lee todos los archivos. NO empieces a ejecutar todavia.
-Hazme preguntas de clarificacion para refinar el enfoque.
-Solo empieza cuando estemos alineados.
+I want [YOUR TASK] so that [WHAT SUCCESS LOOKS LIKE].
+First read all files. Do NOT start executing yet.
+Ask me clarifying questions to refine the approach.
+Only start when we're aligned.
 ```
 
-Si la primera ronda de preguntas no los alinea, dilo. Claude generara un nuevo set y seguiran iterando. Esto es especialmente poderoso con la ventana de contexto de mas de un millon de tokens — cuando Claude ha leido todos los archivos relevantes y ha clarificado la tarea, el output es consistentemente aterrizado en lo que realmente es cierto.
+If the first round of questions doesn't align you, say so. Claude will generate a new set and you'll keep iterating. This is especially powerful with the million-plus token context window — when Claude has read all relevant files and clarified the task, the output is consistently grounded in what's actually true.
 
-## 3. Se especifico en las instrucciones que das
+## 3. Be specific in the instructions you give
 
-Cuando SI escribas instrucciones directas, se especifico. Las solicitudes vagas producen resultados vagos.
+When you DO write direct instructions, be specific. Vague requests produce vague results.
 
-**Mal:**
-> "Hazme un reporte"
+**Bad:**
+> "Make me a report"
 
-**Bien:**
-> "Crea un reporte en Word con los datos de ventas del Q4 2025 del archivo ventas.xlsx. Incluye resumen ejecutivo, graficos de tendencia por region, y recomendaciones. Tono formal, dirigido al equipo directivo. Maximo 6 paginas."
+**Good:**
+> "Create a Word report with Q4 2025 sales data from the sales.xlsx file. Include an executive summary, trend charts by region, and recommendations. Formal tone, directed at the leadership team. Maximum 6 pages."
 
-Elementos clave: que quieres (formato de salida), de donde sacarlo (fuentes), como debe verse (tono, estilo, estructura), para quien es (audiencia) y que NO hacer (restricciones).
+Key elements: what you want (output format), where to get it (sources), how it should look (tone, style, structure), who it's for (audience), and what NOT to do (constraints).
 
-## 4. Limita el acceso a carpetas
+## 4. Limit folder access
 
-No le des acceso a Claude a todo tu disco. Crea carpetas de proyecto especificas y otorga acceso solo a las necesarias. Esto reduce riesgos y ayuda a Claude a enfocarse.
+Don't give Claude access to your entire disk. Create specific project folders and grant access only to the ones needed. This reduces risk and helps Claude focus.
 
-## 5. Haz backup antes de operaciones con archivos
+## 5. Back up before file operations
 
-Antes de pedir a Claude que reorganice, renombre o modifique archivos masivamente, haz una copia de respaldo. Claude puede malinterpretar instrucciones y algunas operaciones son dificiles de revertir.
+Before asking Claude to reorganize, rename, or massively modify files, make a backup. Claude can misinterpret instructions and some operations are hard to reverse.
 
-## 6. Configura instrucciones globales solidas
+## 6. Set up solid global instructions
 
-Esta es la inversion unica que paga en cada sesion para siempre. Ideas:
+This is the one-time investment that pays in every session forever. Ideas:
 
-- "Siempre responde en espanol"
-- "Soy product manager en una startup de fintech"
-- "Prefiero documentos concisos, sin relleno"
-- "Convencion de nombres: YYYY-MM-DD-nombre-descriptivo"
-- "Si no estas seguro de algo, pregunta antes de actuar"
-- "Nunca uses bullet points a menos que lo pida especificamente"
+- "Always respond in English"
+- "I'm a product manager at a fintech startup"
+- "I prefer concise documents, no filler"
+- "Naming convention: YYYY-MM-DD-descriptive-name"
+- "If you're unsure about something, ask before acting"
+- "Never use bullet points unless I specifically ask"
 
-Ver [plantilla completa](../templates/global-instructions.md) para mas ejemplos por rol.
+See [full template](../templates/global-instructions.md) for more role-specific examples.
 
-## 7. Usa instrucciones por carpeta para proyectos
+## 7. Use folder instructions for projects
 
-Cada carpeta de cliente o proyecto puede tener su propio brief que Claude carga automaticamente. Nunca repites contexto.
+Each client or project folder can have its own brief that Claude loads automatically. You never repeat context.
 
-## 8. Revisa el plan antes de ejecutar
+## 8. Review the plan before executing
 
-Siempre. Es mucho mas facil corregir el rumbo antes de la ejecucion que despues.
+Always. It's much easier to course-correct before execution than after.
 
-## 9. Administra tu cuota inteligentemente
+## 9. Manage your quota wisely
 
-Cowork consume significativamente mas cuota que el chat normal. Estrategias:
+Cowork uses significantly more quota than regular chat. Strategies:
 
-- Usa chat normal para preguntas que no necesitan acceso a archivos
-- Agrupa tareas relacionadas en una sola sesion
-- Monitorea Settings > Usage
-- Reserva Cowork para tareas que realmente se benefician de ejecucion agentica
-- Si estas en Pro y haces uso pesado diario, considera Max ($100-200/mes)
+- Use regular chat for questions that don't need file access
+- Group related tasks into a single session
+- Monitor Settings > Usage
+- Reserve Cowork for tasks that truly benefit from agentic execution
+- If you're on Pro and do heavy daily use, consider Max ($100-200/mo)
 
-## 10. Aprovecha la iteracion
+## 10. Leverage iteration
 
-Si el primer resultado no es exacto, no empieces de cero. Pide ajustes especificos sobre lo que ya se genero.
+If the first result isn't exact, don't start from scratch. Ask for specific adjustments on what was already generated.
 
-## 11. Instala el plugin correcto
+## 11. Install the right plugin
 
-Con un plugin activo, el output es notablemente mas estructurado y opinionado que un prompt generico. El plugin sabe como se ve un buen output para tu funcion. No trabajes como generalista si existe un plugin para tu area.
+With an active plugin, the output is noticeably more structured and opinionated than a generic prompt. The plugin knows what good output looks like for your function. Don't work as a generalist if there's a plugin for your area.
 
-## 12. Conecta tus herramientas
+## 12. Connect your tools
 
-Conecta al menos una herramienta (Slack, Drive, Notion, Gmail). Solo se hace una vez. Despues de eso, Claude accede a datos en vivo desde esa herramienta en cada sesion. Es el feature mas subutilizado de Cowork.
+Connect at least one tool (Slack, Drive, Notion, Gmail). It's done only once. After that, Claude accesses live data from that tool in every session. It's the most underused feature in Cowork.
 
-## 13. Explora una funcionalidad nueva cada dia
+## 13. Explore a new feature every day
 
-Dedica 10 minutos diarios a probar algo nuevo. Un tipo de tarea diferente, un conector que no hayas usado, un formato de salida nuevo. Estos experimentos se acumulan y expanden tu conocimiento practico.
+Dedicate 10 minutes a day to trying something new. A different task type, a connector you haven't used, a new output format. These experiments accumulate and expand your practical knowledge.
 
-## 14. Sincroniza tus archivos de contexto en la nube
+## 14. Sync your context files to the cloud
 
-Si trabajas en multiples computadoras, pon tus archivos de contexto en una carpeta sincronizada (iCloud, Dropbox, Google Drive). Cowork es solo desktop y no sincroniza entre dispositivos, pero tus archivos si pueden estarlo.
+If you work on multiple computers, put your context files in a synced folder (iCloud, Dropbox, Google Drive). Cowork is desktop-only and doesn't sync between devices, but your files can be.
 
-## Anti-patrones a evitar
+## Anti-patterns to avoid
 
-**Instrucciones ambiguas:** "Mejora esto" sin especificar que significa "mejor" en tu contexto.
+**Ambiguous instructions:** "Improve this" without specifying what "better" means in your context.
 
-**Carpetas demasiado amplias:** Dar acceso a ~/Documents completo cuando solo necesitas una subcarpeta.
+**Overly broad folders:** Giving access to your entire ~/Documents when you only need a subfolder.
 
-**No revisar el plan:** Dejar que Claude ejecute sin verificar que entendio correctamente.
+**Not reviewing the plan:** Letting Claude execute without verifying it understood correctly.
 
-**Tareas triviales en Cowork:** Usar Cowork para preguntas que el chat normal resuelve sin consumir cuota extra.
+**Trivial tasks in Cowork:** Using Cowork for questions that regular chat can handle without burning extra quota.
 
-**No hacer backup:** Operaciones masivas sobre archivos sin copia de respaldo.
+**No backup:** Bulk operations on files without a backup.
 
-**Prompts excesivamente largos:** En lugar de escribir un prompt de 500 palabras, pon el contexto en archivos y usa AskUserQuestion. El contexto en archivos se compone; los prompts largos se desechan.
+**Excessively long prompts:** Instead of writing a 500-word prompt, put the context in files and use AskUserQuestion. Context in files compounds; long prompts get discarded.
 
-**No usar plugins:** Trabajar como generalista cuando existe un plugin para tu area especifica.
+**Not using plugins:** Working as a generalist when there's a plugin for your specific area.
 
-**Cerrar la app durante una tarea:** Mode suspension esta bien — la sesion sobrevive. Pero cerrar la ventana detiene todo.
+**Closing the app during a task:** Sleep mode is fine — the session survives. But closing the window stops everything.
 
 ---
 
-[Volver al indice](../README.md) | [Anterior: Funcionalidades](02-features.md) | [Siguiente: Plugins y conectores](04-plugins-and-connectors.md)
+[Back to index](../README.md) | [Previous: Features](02-features.md) | [Next: Plugins and connectors](04-plugins-and-connectors.md)

@@ -1,69 +1,69 @@
-# Casos de uso y ejemplos
+# Use cases and examples
 
-## Gestion de archivos
+## File management
 
-### Organizar carpeta de descargas
-> "Organiza mi carpeta de descargas por tipo de archivo (imagenes, documentos, hojas de calculo, videos, codigo). Crea subcarpetas para cada tipo. Dentro de documentos, separa por extension (pdf, docx, txt). Renombra cada archivo con el formato YYYY-MM-DD al inicio. No elimines nada."
+### Organize downloads folder
+> "Organize my downloads folder by file type (images, documents, spreadsheets, videos, code). Create subfolders for each type. Within documents, separate by extension (pdf, docx, txt). Rename each file with the format YYYY-MM-DD at the beginning. Don't delete anything."
 
-### Procesar recibos en reporte de gastos
-> "En esta carpeta hay fotos de recibos de gastos. Extrae la informacion de cada uno (fecha, proveedor, monto, categoria) y crea un Excel con todos los datos organizados. Agrega una columna de totales por categoria y un grafico de pastel con la distribucion de gastos."
+### Process receipts into expense report
+> "In this folder there are photos of expense receipts. Extract the information from each one (date, vendor, amount, category) and create an Excel with all the organized data. Add a totals column by category and a pie chart with the expense distribution."
 
-### Renombrado masivo
-> "Renombra todos los archivos de esta carpeta siguiendo este patron: YYYY-MM-DD_nombre-descriptivo-en-minusculas. Usa la fecha de modificacion del archivo. Reemplaza espacios por guiones bajos."
+### Bulk rename
+> "Rename all files in this folder following this pattern: YYYY-MM-DD_lowercase-descriptive-name. Use the file's modification date. Replace spaces with underscores."
 
-## Investigacion y sintesis
+## Research and synthesis
 
-### Reporte de investigacion
-> "Investiga las tendencias actuales en inteligencia artificial para retail. Busca al menos 5 fuentes recientes. Crea un documento Word con: resumen ejecutivo (1 pagina), tendencias principales con datos de soporte, casos de estudio relevantes, y recomendaciones para una empresa mediana. Tono profesional, dirigido a C-level."
+### Research report
+> "Research current trends in artificial intelligence for retail. Find at least 5 recent sources. Create a Word document with: executive summary (1 page), main trends with supporting data, relevant case studies, and recommendations for a mid-sized company. Professional tone, directed at C-level."
 
-### Analisis de transcripciones
-> "Tengo 5 archivos de texto con transcripciones de entrevistas a usuarios. Extrae los temas principales que se repiten, agrupa los hallazgos por categoria, identifica citas textuales relevantes y crea un reporte en formato markdown con las conclusiones."
+### Transcript analysis
+> "I have 5 text files with user interview transcripts. Extract the main recurring themes, group findings by category, identify relevant direct quotes, and create a report in markdown format with the conclusions."
 
-### Compilacion de notas
-> "Lee todos los archivos .md de esta carpeta (son notas sueltas sobre el proyecto X) y crea un documento unico y organizado. Agrupa por tema, elimina duplicados, y genera un indice navegable."
+### Notes compilation
+> "Read all .md files in this folder (they're loose notes about project X) and create a single organized document. Group by topic, remove duplicates, and generate a navigable table of contents."
 
-## Documentos y presentaciones
+## Documents and presentations
 
-### Excel con analisis
-> "Crea un Excel a partir de los datos del archivo datos-ventas.csv. Agrega: tabla pivot por region y producto, formulas VLOOKUP para cruzar con el archivo de metas, formato condicional que resalte en rojo las regiones que no cumplieron meta, y un grafico de barras comparativo."
+### Excel with analysis
+> "Create an Excel from the data in the sales-data.csv file. Add: pivot table by region and product, VLOOKUP formulas to cross-reference with the targets file, conditional formatting that highlights in red the regions that didn't meet target, and a comparative bar chart."
 
-### Presentacion desde notas
-> "Transforma mis notas del archivo reuniones.md en una presentacion PowerPoint de 10 slides. Incluye: slide de titulo, agenda, 6 slides de contenido principal, slide de proximos pasos, y slide de cierre. Usa un diseno profesional con colores azul y blanco."
+### Presentation from notes
+> "Transform my notes from the meetings.md file into a 10-slide PowerPoint presentation. Include: title slide, agenda, 6 main content slides, next steps slide, and closing slide. Use a professional design with blue and white colors."
 
-### Documento formal
-> "Crea un documento Word con membrete para la empresa 'TechCo'. Incluye: logo placeholder, titulo del documento, tabla de contenido automatica, 4 secciones con sub-secciones, numeracion de paginas, y formato profesional con fuentes serif."
+### Formal document
+> "Create a Word document with letterhead for the company 'TechCo'. Include: logo placeholder, document title, automatic table of contents, 4 sections with sub-sections, page numbering, and professional formatting with serif fonts."
 
-## Datos y analisis
+## Data and analysis
 
-### Limpieza de datos
-> "El archivo datos.csv tiene problemas: columnas desordenadas, valores nulos, filas duplicadas y formatos de fecha inconsistentes. Limpia los datos, estandariza el formato de fechas a YYYY-MM-DD, elimina duplicados, marca los valores nulos, y exporta como un Excel limpio con un tab adicional que documente los cambios realizados."
+### Data cleaning
+> "The data.csv file has issues: disordered columns, null values, duplicate rows, and inconsistent date formats. Clean the data, standardize date format to YYYY-MM-DD, remove duplicates, flag null values, and export as a clean Excel with an additional tab documenting the changes made."
 
-### Visualizacion
-> "Analiza el dataset ventas_2025.xlsx. Identifica outliers, calcula tendencias mensuales, y crea una pagina HTML interactiva con graficos de lineas para tendencias, scatter plot para correlaciones, y una tabla resumen con los KPIs principales."
+### Visualization
+> "Analyze the sales_2025.xlsx dataset. Identify outliers, calculate monthly trends, and create an interactive HTML page with line charts for trends, scatter plot for correlations, and a summary table with the main KPIs."
 
-### Comparacion de archivos
-> "Compara los dos archivos Excel (presupuesto_v1.xlsx y presupuesto_v2.xlsx). Identifica todas las diferencias: celdas modificadas, filas agregadas o eliminadas, y cambios en formulas. Genera un reporte con las diferencias resaltadas."
+### File comparison
+> "Compare the two Excel files (budget_v1.xlsx and budget_v2.xlsx). Identify all differences: modified cells, added or deleted rows, and formula changes. Generate a report with the highlighted differences."
 
-## Automatizacion (tareas programadas)
+## Automation (scheduled tasks)
 
-### Reporte diario
-> "/schedule todos los dias a las 8am: Lee los archivos nuevos en la carpeta 'inbox', genera un resumen en markdown con los puntos clave de cada documento, y guardalo en la carpeta 'resumenes-diarios' con la fecha de hoy."
+### Daily report
+> "/schedule every day at 8am: Read the new files in the 'inbox' folder, generate a markdown summary with the key points from each document, and save it in the 'daily-summaries' folder with today's date."
 
-### Monitoreo semanal
-> "/schedule cada lunes a las 9am: Revisa mi calendario de la semana, lista las reuniones con sus horarios, y crea un documento con la agenda semanal incluyendo tiempo de preparacion sugerido para cada reunion."
+### Weekly monitoring
+> "/schedule every Monday at 9am: Review my calendar for the week, list meetings with their times, and create a document with the weekly agenda including suggested preparation time for each meeting."
 
-## Workflows multi-herramienta
+## Multi-tool workflows
 
-### Investigacion + Documento + Presentacion
-1. Investiga un tema en la web
-2. Compila hallazgos en un documento Word
-3. Genera una presentacion ejecutiva a partir del documento
+### Research + Document + Presentation
+1. Research a topic on the web
+2. Compile findings in a Word document
+3. Generate an executive presentation from the document
 
-### Email + Calendario + Reporte
-1. Revisa emails recientes sobre un proyecto (via Gmail connector)
-2. Cruza con eventos del calendario (via Google Calendar connector)
-3. Genera un status report con actividades y proximos pasos
+### Email + Calendar + Report
+1. Review recent emails about a project (via Gmail connector)
+2. Cross-reference with calendar events (via Google Calendar connector)
+3. Generate a status report with activities and next steps
 
 ---
 
-[Volver al indice](../README.md) | [Anterior: Plugins y conectores](04-plugins-and-connectors.md) | [Siguiente: Troubleshooting](06-troubleshooting.md)
+[Back to index](../README.md) | [Previous: Plugins and connectors](04-plugins-and-connectors.md) | [Next: Troubleshooting](06-troubleshooting.md)

@@ -1,71 +1,71 @@
-# Ejemplo: Organizacion de archivos
+# Example: File organization
 
-## Escenario
+## Scenario
 
-Tienes una carpeta de descargas con 200+ archivos mezclados: PDFs, imagenes, documentos Word, hojas de calculo, videos y archivos de codigo.
+You have a downloads folder with 200+ mixed files: PDFs, images, Word documents, spreadsheets, videos, and code files.
 
-## Prompt utilizado
+## Prompt used
 
 ```
-Organiza todos los archivos de esta carpeta siguiendo estas reglas:
+Organize all files in this folder following these rules:
 
-1. Crea subcarpetas por tipo:
-   - Imagenes/ (jpg, png, gif, svg, webp, ico)
-   - Documentos/ (pdf, docx, txt, md, rtf)
-   - Hojas de calculo/ (xlsx, csv, tsv)
-   - Presentaciones/ (pptx, ppt)
+1. Create subfolders by type:
+   - Images/ (jpg, png, gif, svg, webp, ico)
+   - Documents/ (pdf, docx, txt, md, rtf)
+   - Spreadsheets/ (xlsx, csv, tsv)
+   - Presentations/ (pptx, ppt)
    - Videos/ (mp4, mov, avi, mkv)
    - Audio/ (mp3, wav, flac)
-   - Codigo/ (py, js, html, css, json, yaml)
-   - Otros/ (todo lo demas)
+   - Code/ (py, js, html, css, json, yaml)
+   - Other/ (everything else)
 
-2. Renombra cada archivo con el formato:
-   YYYY-MM-DD_nombre-original-limpio
-   - Usa la fecha de modificacion del archivo
-   - Reemplaza espacios por guiones bajos
-   - Convierte a minusculas
-   - Elimina caracteres especiales
+2. Rename each file with the format:
+   YYYY-MM-DD_clean-original-name
+   - Use the file's modification date
+   - Replace spaces with underscores
+   - Convert to lowercase
+   - Remove special characters
 
-3. Genera un reporte en markdown (organizacion-reporte.md) con:
-   - Total de archivos procesados
-   - Cantidad por categoria
-   - Lista de archivos renombrados (nombre anterior → nombre nuevo)
-   - Archivos que no se pudieron procesar (si los hay)
+3. Generate a markdown report (organization-report.md) with:
+   - Total files processed
+   - Count by category
+   - List of renamed files (old name → new name)
+   - Files that couldn't be processed (if any)
 
-4. NO elimines ningun archivo.
+4. Do NOT delete any files.
 ```
 
-## Que hace Claude
+## What Claude does
 
-1. Escanea la carpeta completa y cataloga todos los archivos
-2. Crea la estructura de subcarpetas
-3. Mueve y renombra cada archivo segun las reglas
-4. Genera el reporte de resumen
-5. Te muestra el resultado final
+1. Scans the entire folder and catalogs all files
+2. Creates the subfolder structure
+3. Moves and renames each file according to the rules
+4. Generates the summary report
+5. Shows you the final result
 
-## Resultado esperado
+## Expected result
 
 ```
-Descargas/
-|-- Imagenes/
-|   |-- 2025-11-15_foto-equipo.jpg
-|   |-- 2025-12-01_logo-proyecto.png
-|-- Documentos/
-|   |-- 2025-10-20_contrato-servicio.pdf
-|   |-- 2025-11-30_notas-reunion.docx
-|-- Hojas de calculo/
-|   |-- 2025-12-15_presupuesto-q1.xlsx
+Downloads/
+|-- Images/
+|   |-- 2025-11-15_team-photo.jpg
+|   |-- 2025-12-01_project-logo.png
+|-- Documents/
+|   |-- 2025-10-20_service-contract.pdf
+|   |-- 2025-11-30_meeting-notes.docx
+|-- Spreadsheets/
+|   |-- 2025-12-15_q1-budget.xlsx
 |-- ...
-|-- organizacion-reporte.md
+|-- organization-report.md
 ```
 
 ## Tips
 
-- Siempre haz backup antes de reorganizar archivos masivamente
-- Empieza con una carpeta pequena para probar las reglas
-- Se explicito sobre lo que NO debe hacer (eliminar, modificar contenido)
-- Revisa el reporte despues para confirmar que todo quedo bien
+- Always back up before bulk file reorganization
+- Start with a small folder to test the rules
+- Be explicit about what it should NOT do (delete, modify content)
+- Review the report afterward to confirm everything looks right
 
 ---
 
-[Volver al indice](../README.md)
+[Back to index](../README.md)

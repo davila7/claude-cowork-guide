@@ -1,62 +1,62 @@
-# Ejemplo: Sintesis de investigacion
+# Example: Research synthesis
 
-## Escenario
+## Scenario
 
-Necesitas un reporte de investigacion sobre un tema especifico, sintetizando multiples fuentes en un documento coherente y accionable.
+You need a research report on a specific topic, synthesizing multiple sources into a coherent and actionable document.
 
-## Prompt utilizado
+## Prompt used
 
 ```
-Investiga sobre "tendencias de adopcion de IA en empresas medianas de Latinoamerica en 2025-2026".
+Research "AI adoption trends in mid-sized companies in Latin America in 2025-2026".
 
-Proceso:
-1. Busca al menos 6 fuentes recientes y confiables
-2. Prioriza reportes de consultoras, articulos academicos y publicaciones especializadas
-3. Evita blogs genericos o contenido sin datos de respaldo
+Process:
+1. Find at least 6 recent and reliable sources
+2. Prioritize consulting firm reports, academic articles, and specialized publications
+3. Avoid generic blogs or content without supporting data
 
-Entregable: Crea un documento Word (tendencias-ia-latam.docx) con esta estructura:
+Deliverable: Create a Word document (ai-trends-latam.docx) with this structure:
 
-1. Resumen ejecutivo (media pagina max)
-   - 3-4 hallazgos principales en formato bullet
+1. Executive summary (half page max)
+   - 3-4 main findings in bullet format
 
-2. Contexto del mercado
-   - Tamano del mercado de IA en LATAM
-   - Comparacion con otras regiones
+2. Market context
+   - AI market size in LATAM
+   - Comparison with other regions
 
-3. Tendencias principales (una seccion por tendencia)
-   - Descripcion de la tendencia
-   - Datos cuantitativos de soporte
-   - Ejemplos concretos
+3. Main trends (one section per trend)
+   - Trend description
+   - Quantitative supporting data
+   - Concrete examples
 
-4. Barreras y desafios
-   - Obstaculos comunes para la adopcion
-   - Como los estan resolviendo las empresas lideres
+4. Barriers and challenges
+   - Common obstacles to adoption
+   - How leading companies are solving them
 
-5. Recomendaciones
-   - 5 acciones concretas priorizadas por impacto/esfuerzo
+5. Recommendations
+   - 5 concrete actions prioritized by impact/effort
 
-6. Fuentes
-   - Lista completa con enlaces
+6. Sources
+   - Complete list with links
 
-Tono: Profesional, orientado a decision-makers. Maximo 8 paginas.
+Tone: Professional, oriented toward decision-makers. Maximum 8 pages.
 ```
 
-## Que hace Claude
+## What Claude does
 
-1. Ejecuta multiples busquedas web sobre el tema
-2. Lee y analiza cada fuente encontrada
-3. Sintetiza la informacion (sin copiar textualmente)
-4. Crea el documento Word con la estructura solicitada
-5. Incluye citas y referencias
+1. Executes multiple web searches on the topic
+2. Reads and analyzes each source found
+3. Synthesizes the information (without copying verbatim)
+4. Creates the Word document with the requested structure
+5. Includes citations and references
 
 ## Tips
 
-- Especifica el nivel de profundidad que necesitas
-- Define tu audiencia para que Claude ajuste el tono
-- Pide datos cuantitativos explicitamente para evitar reportes genericos
-- Indica fuentes a evitar si las conoces (blogs poco confiables, etc.)
-- Establece un limite de paginas para mantener el enfoque
+- Specify the depth level you need
+- Define your audience so Claude adjusts the tone
+- Explicitly ask for quantitative data to avoid generic reports
+- Indicate sources to avoid if you know them (unreliable blogs, etc.)
+- Set a page limit to maintain focus
 
 ---
 
-[Volver al indice](../README.md)
+[Back to index](../README.md)
