@@ -35,6 +35,7 @@ claude-cowork-guide/
 |   |-- 05-use-cases.md                # Use cases with real prompts
 |   |-- 06-troubleshooting.md          # Honest limitations and solutions
 |   |-- 07-code-vs-cowork.md           # Claude Code vs Cowork: when to use which
+|   |-- 08-mega-prompts.md             # 10 mega prompts for complete workflows
 |-- templates/
 |   |-- context-files/
 |   |   |-- about-me.md                # Template: who you are
@@ -71,6 +72,7 @@ claude-cowork-guide/
 | [Use cases](docs/05-use-cases.md) | Practical examples with ready-to-use prompts |
 | [Troubleshooting](docs/06-troubleshooting.md) | Honest limitations, workarounds, and common issues |
 | [Code vs Cowork](docs/07-code-vs-cowork.md) | When to use Claude Code, when to use Cowork, and when to use both |
+| [Mega Prompts](docs/08-mega-prompts.md) | 10 copy-paste mega prompts for complete workflows (marketing, coding, finance, management) |
 
 ## Templates
 
