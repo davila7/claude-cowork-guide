@@ -129,9 +129,13 @@ Using `/schedule`, you configure tasks that run automatically on a recurring bas
 
 Claude searches for information with WebSearch and WebFetch. With Claude in Chrome installed, it can interact directly with web pages.
 
-### Excel + PowerPoint integration
+### Cross-App Workflows (Excel + PowerPoint)
 
-In research preview, Claude can pass context between Excel and PowerPoint. Available for Mac on Max, Team, or Enterprise plans.
+Cowork can pass context between Excel and PowerPoint add-ins. Claude can analyse data in Excel and move a chart directly into a presentation without you switching apps.
+
+**Requirements:** Mac users on Max, Team, or Enterprise plans. Both the Claude in Excel and Claude in PowerPoint add-ins must be installed. Windows support isn't available yet for this feature.
+
+**Caution:** Be aware that data from one application may flow into another during a Cowork session. Avoid working with sensitive information in these add-ins while Cowork is active.
 
 ### No image generation
 
@@ -143,15 +147,27 @@ These formats have built-in visualization in the interface: Markdown (.md), HTML
 
 ## Security and permissions
 
-**Isolation:** the VM is separate from the main operating system.
+**VM isolation:** Cowork runs in a sandboxed virtual machine (Apple's Virtualization Framework on macOS). Code executes in an isolated space, but Claude can make real changes to files you've shared.
 
 **Access control:** you choose which folders and connectors Claude can see.
 
-**Deletion protection:** Claude requires explicit permission before deleting files.
+**Deletion protection:** Claude requires explicit permission before permanently deleting files. You'll see a prompt and must click "Allow."
+
+**Model training against prompt injection:** Anthropic uses reinforcement learning to train Claude to refuse malicious instructions and content classifiers to flag potential injections.
 
 **Granular permissions:** for each connector you can configure tools as Allow (automatic), Ask (confirms before), or Block (never executes).
 
-**Research preview:** Anthropic is explicit about this — agent security for Cowork is still under development. It's solid for a preview, but treat it accordingly. Don't run it on files you can't afford to have modified without confirmation.
+### Real risks to manage
+
+**Prompt injection:** If Claude reads a malicious document or website, hidden instructions could alter its behavior. Limit Claude in Chrome access to trusted sites. Web content is the primary injection vector.
+
+**File destruction:** Claude can modify or delete files in any folder you share. Use a dedicated workspace. Keep backups.
+
+**Scope creep:** Watch for unexpected patterns: Claude accessing files you didn't mention, or task scope expanding beyond what you asked for. If something feels off, stop the task immediately.
+
+**No audit logging:** Cowork activity is not captured in audit logs, Compliance API, or data exports. Do not use Cowork for regulated workloads.
+
+**Research preview:** Anthropic is explicit about this — agent security for Cowork is still under development. It's solid for a preview, but treat it accordingly.
 
 ---
 

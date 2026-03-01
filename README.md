@@ -8,9 +8,11 @@ Cowork is the agentic extension of Claude Desktop that brings Claude Code's capa
 
 > ChatGPT trained you to write better prompts. Cowork trains you to build better context. One is a skill that depreciates. The other compounds.
 
-**Current status:** Research Preview (available since January 2026)
+**Current status:** Research Preview (launched January 12, 2026)
 
 **Availability:** Paid plans (Pro $20/mo, Max $100-200/mo, Team, Enterprise) on macOS and Windows
+
+**Origin:** Built on the same agentic architecture as Claude Code. Boris Cherny reportedly built Cowork in ~10 days using Claude Code itself.
 
 ## The 5 Pillars of Cowork
 
@@ -28,6 +30,7 @@ Cowork is the agentic extension of Claude Desktop that brings Claude Code's capa
 claude-cowork-guide/
 |-- README.md                          # This file
 |-- docs/
+|   |-- 00-definitive-setup-guide.md   # The definitive setup guide (by @witcheer)
 |   |-- 01-getting-started.md          # Your first 30 minutes with Cowork
 |   |-- 02-features.md                 # The 5 pillars and capabilities
 |   |-- 03-best-practices.md           # Philosophy and best practices
@@ -59,12 +62,13 @@ claude-cowork-guide/
 5. **Minutes 20-25:** Install a [plugin](docs/04-plugins-and-connectors.md) for your role
 6. **Minutes 25-30:** Connect a tool (Slack, Drive, Gmail) in Settings > Connectors
 
-> Detailed step-by-step guide: [Getting started](docs/01-getting-started.md)
+> Detailed step-by-step guide: [Getting started](docs/01-getting-started.md) | Complete reference: [The Definitive Setup Guide](docs/00-definitive-setup-guide.md)
 
 ## Main guides
 
 | Guide | Description |
 |-------|-------------|
+| [The Definitive Setup Guide](docs/00-definitive-setup-guide.md) | Complete setup from zero: requirements, workspace, context files, plugins, connectors, safety |
 | [Getting started](docs/01-getting-started.md) | Your first 30 minutes, context files, global instructions |
 | [Features](docs/02-features.md) | The 5 pillars of Cowork and technical capabilities |
 | [Best practices](docs/03-best-practices.md) | "Context > prompts" philosophy, patterns and anti-patterns |

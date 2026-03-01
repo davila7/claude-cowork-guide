@@ -1,12 +1,16 @@
 # Getting started with Claude Cowork
 
+> For the complete setup reference, see [The Definitive Setup Guide](00-definitive-setup-guide.md).
+
 ## Prerequisites
 
-**Operating system:** macOS or Windows (x64 only). Not available on web or mobile.
+**Operating system:** macOS (universal) or Windows (x64 only). No arm64 Windows. Not available on web or mobile.
 
-**Claude plan:** Pro ($20/mo), Max ($100-200/mo), Team, or Enterprise. Cowork is not available on the free plan.
+**Claude plan:** Pro ($20/mo), Max 5x ($100/mo), Max 20x ($200/mo), Team ($25+/seat/mo), or Enterprise (custom). Cowork is not available on the free plan.
 
 **Internet connection:** Required throughout the entire session.
+
+**App must stay open:** Closing the desktop app kills the session. Sleep is fine, quitting is not.
 
 **App:** Download the latest version of Claude Desktop from [claude.com/download](https://claude.com/download).
 
@@ -29,11 +33,22 @@ Block 30 minutes on your calendar. That's all you need.
 
 When you enter for the first time, you'll see a message saying "Setting up Claude's workspace" — this is normal and means Cowork is configuring the environment.
 
-### Minutes 5-10: Create your context files
+### Minutes 5-10: Create your workspace and context files
 
 This is the most underrated strategy in all of Cowork. Stop thinking about better prompts and start thinking about better files.
 
-Create a folder called **"Claude Context"** and inside it, three markdown files:
+Create a dedicated workspace folder rather than pointing Cowork at your entire home directory. This is a safety best practice confirmed by Anthropic's own safety documentation:
+
+```
+~/Claude-Workspace/
+├── context/          # Your standing context files
+├── projects/         # Active project folders
+└── outputs/          # Where Claude delivers finished work
+```
+
+**Backup first:** Before your first real task, back up anything in the folders you plan to share. `cp -R ~/Claude-Workspace/ ~/Claude-Workspace-Backup/` is cheap insurance.
+
+Inside the `context/` folder, create three markdown files:
 
 **`about-me.md`** — Who you are, what you do, your role, what success looks like in your work. Include an example of work you're proud of.
 
@@ -108,4 +123,4 @@ If the instructions loaded correctly, Claude will reflect them clearly. If somet
 
 ---
 
-[Back to index](../README.md) | [Next: Features](02-features.md)
+[Back to index](../README.md) | [Previous: The Definitive Setup Guide](00-definitive-setup-guide.md) | [Next: Features](02-features.md)
