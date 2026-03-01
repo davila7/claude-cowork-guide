@@ -12,7 +12,7 @@ Plugins change that. They are packages of skills, slash commands, sub-agents, an
 
 ### Official Anthropic plugins
 
-Anthropic launched plugins for these areas in January 2026 and continues expanding the library:
+Anthropic open-sourced 11 plugins on January 30, 2026 and shipped 10 more on February 24. The open-source repo is at [github.com/anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins).
 
 | Plugin | For whom | What it does |
 |--------|----------|-------------|
@@ -30,6 +30,13 @@ Anthropic launched plugins for these areas in January 2026 and continues expandi
 | **Design** | Designers | Design workflows |
 | **Engineering** | Engineers | Technical documentation, processes |
 | **Operations** | Operations teams | Operational management |
+| **Financial Analysis** | Finance generalists | Market research, modeling, PowerPoint |
+| **Investment Banking** | IB teams | Transaction docs, comps, pitch materials |
+| **Equity Research** | Research analysts | Earnings parsing, model updates, research notes |
+| **Private Equity** | PE teams | Deal sourcing, document review, scoring |
+| **Wealth Management** | Wealth advisors | Portfolio analysis, rebalancing |
+| **Brand Voice (Tribe AI)** | Multi-writer teams | Brand voice analysis and guidelines |
+| **Plugin Management** | Team admins | Create and customize other plugins |
 
 ### How to install a plugin
 
@@ -133,21 +140,31 @@ suggest a priority order for my meetings.
 
 **Custom MCP servers:** manually configured by editing a JSON configuration file.
 
-### Available connectors (February 2026)
+### Available connectors (as of February 24, 2026)
 
-**Productivity:** Google Workspace (Calendar, Drive, Gmail), Slack, Notion, Asana, Figma
+**Productivity:** Google Drive, Gmail, Google Calendar, Slack, Notion, Asana, Monday, ClickUp, Microsoft 365, Figma
 
-**Sales and CRM:** Apollo, Clay, Outreach, Common Room
+**Sales and CRM:** HubSpot, Close, Clay, ZoomInfo, Apollo, Outreach, Common Room
 
 **Legal:** DocuSign, LegalZoom, Harvey
 
-**Finance and data:** FactSet, MSCI, LSEG, S&P Global
+**Finance and data:** FactSet, MSCI, LSEG, S&P Global, Snowflake, Databricks, BigQuery, Hex
 
-**Marketing and content:** WordPress, Similarweb
+**Marketing and content:** WordPress, Canva, Ahrefs, SimilarWeb, Klaviyo
+
+**Project management:** Linear, Jira, Asana, Monday, ClickUp
+
+**Knowledge and support:** Guru, Intercom, Pendo, Amplitude
 
 **Development:** Linear, GitHub
 
+**Storage:** Box, Egnyte
+
+**Other:** Fireflies, Benchling
+
 All connectors are free. You just need a paid Claude plan and an active subscription to the service you want to connect.
+
+**First connector to set up:** Connect whichever tool you use most. Slack, Google Drive, or Notion are the highest-leverage starting points for most knowledge workers.
 
 ### Permissions per connector
 
