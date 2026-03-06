@@ -56,12 +56,22 @@ Create a dedicated folder for Cowork rather than pointing it at your entire home
 
 ```
 ~/Claude-Workspace/
-├── context/          # Your standing context files
-├── projects/         # Active project folders
+├── .claude/              # Project configuration (Claude reads this first)
+│   ├── CLAUDE.md         # Project-level instructions
+│   └── settings.json     # Settings and folder mapping
+├── CLAUDE.md             # Root instructions (auto-loaded by Cowork)
+├── context/              # Your standing context files
+│   ├── about-me.md
+│   ├── brand-voice.md
+│   └── working-style.md
+├── plugins/              # Installed plugin configs
+├── projects/             # Active project folders
 │   ├── client-a/
 │   └── client-b/
-└── outputs/          # Where Claude delivers finished work
+└── outputs/              # Where Claude delivers finished work
 ```
+
+> You can clone the [claude-cowork-guide](https://github.com/davila7/claude-cowork-guide) repository to get this structure ready to use with all templates and documentation included.
 
 **Why this matters:** Cowork runs in a VM but has real read/write/delete access to any folder you share. Anthropic's safety guide explicitly warns: "Claude can take potentially destructive actions (such as deleting local files) if it's instructed to." A dedicated workspace limits blast radius.
 
@@ -81,7 +91,7 @@ Cowork is desktop-only with no built-in sync. If you work across machines, put y
 
 This is the highest-leverage setup step. The quality of Cowork's output is directly proportional to the quality of context you provide in files.
 
-Create these in your `context/` folder as `.md` (Markdown) files. Markdown is the most token-efficient format for Claude to read.
+Create these in your `context/` folder as `.md` (Markdown) files. If you cloned the setup kit, these files are already there — just fill them in. Markdown is the most token-efficient format for Claude to read.
 
 ### about-me.md
 
@@ -146,7 +156,7 @@ These are more useful than abstract descriptions of your style.]
 
 **The compounding effect:** These files get better over time. After every session where Claude's output missed the mark, update the relevant context file. You can also ask Claude Desktop to help you write these three files based on all previous discussions you've had together.
 
-> Full templates with more detail: [about-me.md](../templates/context-files/about-me.md) | [brand-voice.md](../templates/context-files/brand-voice.md) | [working-style.md](../templates/context-files/working-style.md)
+> Ready-to-fill context files: [about-me.md](../context/about-me.md) | [brand-voice.md](../context/brand-voice.md) | [working-style.md](../context/working-style.md) | Original templates: [templates/context-files/](../templates/context-files/)
 
 ---
 

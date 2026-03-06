@@ -1,0 +1,13 @@
+{
+  "name": "cowork-setup-kit",
+  "display_name": "Cowork Setup Kit",
+  "description": "Base plugin with context, templates, and best practices for Claude Cowork",
+  "version": "1.0.0",
+  "author": "claude-cowork-guide",
+  "skills": [
+    "skills/"
+  ],
+  "commands": [
+    "commands/"
+  ]
+}

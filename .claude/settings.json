@@ -1,0 +1,19 @@
+{
+  "project": "claude-cowork-guide",
+  "description": "Complete brain and setup kit for Claude Cowork",
+  "version": "1.0.0",
+  "language": "en",
+  "output_format": "markdown",
+  "permissions": {
+    "file_access": true,
+    "web_search": false,
+    "connectors": false
+  },
+  "folders": {
+    "context": "context/",
+    "plugins": "plugins/",
+    "templates": "templates/",
+    "docs": "docs/",
+    "examples": "examples/"
+  }
+}

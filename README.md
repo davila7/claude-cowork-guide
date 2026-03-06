@@ -24,41 +24,78 @@ Cowork is the agentic extension of Claude Desktop that brings Claude Code's capa
 | 4 | **Instructions** | Permanent memory that loads in every session |
 | 5 | **Connectors** | Live integrations with Slack, Drive, Notion, and 50+ tools |
 
-## Repository structure
+## Project structure (what you download)
+
+This repository is organized as a real Cowork workspace. When you clone it, you get a ready-to-use project structure:
 
 ```
 claude-cowork-guide/
-|-- README.md                          # This file
-|-- docs/
-|   |-- 00-definitive-setup-guide.md   # The definitive setup guide (by @witcheer)
-|   |-- 01-getting-started.md          # Your first 30 minutes with Cowork
-|   |-- 02-features.md                 # The 5 pillars and capabilities
-|   |-- 03-best-practices.md           # Philosophy and best practices
-|   |-- 04-plugins-and-connectors.md   # Plugins, MCP, connectors, and slash commands
-|   |-- 05-use-cases.md                # Use cases with real prompts
-|   |-- 06-troubleshooting.md          # Honest limitations and solutions
-|   |-- 07-code-vs-cowork.md           # Claude Code vs Cowork: when to use which
-|   |-- 08-plugins-tier-list.md        # Honest tier list of all 21 plugins
-|-- templates/
-|   |-- context-files/
-|   |   |-- about-me.md                # Template: who you are
-|   |   |-- brand-voice.md             # Template: how you communicate
-|   |   |-- working-style.md           # Template: how you want Claude to work
-|   |-- global-instructions.md         # Global instruction templates by role
-|   |-- folder-instructions.md         # Per-folder instruction templates
-|   |-- task-prompts.md                # Tested prompts for common tasks
-|-- examples/
-|   |-- file-organization.md           # Example: organizing files
-|   |-- research-synthesis.md          # Example: research synthesis
-|   |-- data-analysis.md               # Example: data analysis
+│
+├── .claude/                           # ⚙️ Claude project configuration
+│   ├── CLAUDE.md                      #    Project instructions (Claude reads this first)
+│   └── settings.json                  #    Project settings and folder mapping
+│
+├── CLAUDE.md                          # 📋 Root instructions file (auto-loaded by Cowork)
+│
+├── context/                           # 🧠 Your personal context (fill these in)
+│   ├── about-me.md                    #    Who you are, your role, your goals
+│   ├── brand-voice.md                 #    Your tone, phrases, writing style
+│   └── working-style.md              #    How you want Claude to behave
+│
+├── plugins/                           # 🔌 Plugin configuration
+│   ├── .claude-plugin/
+│   │   └── plugin.json                #    Plugin manifest
+│   ├── .mcp.json                      #    MCP tool connections
+│   ├── commands/
+│   │   └── setup-check.md             #    /setup-check command
+│   └── skills/
+│       └── setup-best-practices.md    #    Setup knowledge for Claude
+│
+├── templates/                         # 📝 Ready-to-use templates
+│   ├── context-files/                 #    Original context file templates
+│   │   ├── about-me.md
+│   │   ├── brand-voice.md
+│   │   └── working-style.md
+│   ├── global-instructions.md         #    Global instruction templates by role
+│   ├── folder-instructions.md         #    Per-folder instruction templates
+│   └── task-prompts.md                #    Tested prompts for common tasks
+│
+├── docs/                              # 📚 Full documentation
+│   ├── 00-definitive-setup-guide.md   #    Complete setup guide (by @witcheer)
+│   ├── 01-getting-started.md          #    Your first 30 minutes
+│   ├── 02-features.md                 #    The 5 pillars and capabilities
+│   ├── 03-best-practices.md           #    Philosophy and best practices
+│   ├── 04-plugins-and-connectors.md   #    Plugins, MCP, connectors
+│   ├── 05-use-cases.md                #    Use cases with real prompts
+│   ├── 06-troubleshooting.md          #    Limitations and solutions
+│   ├── 07-code-vs-cowork.md           #    Claude Code vs Cowork
+│   └── 08-plugins-tier-list.md        #    Tier list of all 21 plugins
+│
+├── examples/                          # 💡 Real-world examples
+│   ├── file-organization.md           #    Organizing files
+│   ├── research-synthesis.md          #    Research synthesis
+│   └── data-analysis.md              #    Data analysis
+│
+└── README.md                          # This file
 ```
+
+### How each folder works
+
+| Folder | Purpose | When it loads |
+|--------|---------|---------------|
+| `.claude/` | Project config — tells Claude how to treat this workspace | Automatically at session start |
+| `context/` | Your identity, voice, and preferences | When Claude reads the workspace |
+| `plugins/` | Skills and slash commands for Cowork | When plugin is installed |
+| `templates/` | Starting points you copy and customize | On demand |
+| `docs/` | Reference guides and documentation | On demand |
+| `examples/` | Concrete examples with prompts and results | On demand |
 
 ## Quick start (30 minutes)
 
-1. **Minutes 0-5:** Download the app from [claude.com/download](https://claude.com/download) and open Cowork
-2. **Minutes 5-10:** Create your "Claude Context" folder with [context files](templates/context-files/)
+1. **Minutes 0-5:** Clone this repo and download the app from [claude.com/download](https://claude.com/download)
+2. **Minutes 5-10:** Fill in your [context files](context/) (`about-me.md`, `brand-voice.md`, `working-style.md`)
 3. **Minutes 10-15:** Set up [global instructions](templates/global-instructions.md) in Settings > Cowork
-4. **Minutes 15-20:** Run your first real task using the "read + ask me + execute" pattern
+4. **Minutes 15-20:** Point Cowork to this folder and run `/setup-check` to verify your config
 5. **Minutes 20-25:** Install a [plugin](docs/04-plugins-and-connectors.md) for your role
 6. **Minutes 25-30:** Connect a tool (Slack, Drive, Gmail) in Settings > Connectors
 
@@ -78,13 +115,18 @@ claude-cowork-guide/
 | [Code vs Cowork](docs/07-code-vs-cowork.md) | When to use Claude Code, when to use Cowork, and when to use both |
 | [Plugins tier list](docs/08-plugins-tier-list.md) | Honest ranking of all 21 plugins after four weeks of daily use |
 
+## Context files (fill these in first)
+
+| File | Purpose |
+|------|---------|
+| [about-me.md](context/about-me.md) | Who you are, your role, and what success looks like |
+| [brand-voice.md](context/brand-voice.md) | Your tone, phrases, and communication style |
+| [working-style.md](context/working-style.md) | How you want Claude to behave and output preferences |
+
 ## Templates
 
 | Template | Purpose |
 |----------|---------|
-| [about-me.md](templates/context-files/about-me.md) | Who you are and what you do |
-| [brand-voice.md](templates/context-files/brand-voice.md) | Your communication style |
-| [working-style.md](templates/context-files/working-style.md) | How you want Claude to work |
 | [Global instructions](templates/global-instructions.md) | Preferences by role (PM, analyst, marketing) |
 | [Folder instructions](templates/folder-instructions.md) | Per-project context |
 | [Tested prompts](templates/task-prompts.md) | Ready-to-copy-and-use prompts |
